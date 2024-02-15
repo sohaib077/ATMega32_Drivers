@@ -1,0 +1,32 @@
+12:59:43 **** Incremental Build of configuration Debug for project LABS ****
+make all 
+Building file: ../motor_labs/HBridge.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"motor_labs/HBridge.d" -MT"motor_labs/HBridge.o" -c -o "motor_labs/HBridge.o" "../motor_labs/HBridge.c"
+../motor_labs/HBridge.c:7:30: error: ../LIB/STD_TYPES.h: No such file or directory
+../motor_labs/HBridge.c:8:39: error: ../MCAL/DIO/DIO_interface.h: No such file or directory
+../motor_labs/HBridge.c:9:35: error: ../HAL/LCD/LCD_config.h: No such file or directory
+../motor_labs/HBridge.c:10:38: error: ../HAL/LCD/LCD_interface.h: No such file or directory
+../motor_labs/HBridge.c:11:41: error: ../HAL/KeyPad/KEYPAD_config.h: No such file or directory
+../motor_labs/HBridge.c:12:44: error: ../HAL/KeyPad/KEYPAD_interface.h: No such file or directory
+In file included from ../motor_labs/HBridge.c:13:
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../motor_labs/HBridge.c:13:
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../motor_labs/HBridge.c:15: warning: return type of 'main' is not 'int'
+../motor_labs/HBridge.c: In function 'main':
+../motor_labs/HBridge.c:16: warning: implicit declaration of function 'DIO_u8SetPinDirection'
+../motor_labs/HBridge.c:16: error: 'DIO_u8PORTB' undeclared (first use in this function)
+../motor_labs/HBridge.c:16: error: (Each undeclared identifier is reported only once
+../motor_labs/HBridge.c:16: error: for each function it appears in.)
+../motor_labs/HBridge.c:16: error: 'DIO_u8PIN0' undeclared (first use in this function)
+../motor_labs/HBridge.c:16: error: 'DIO_u8PIN_OUTPUT' undeclared (first use in this function)
+../motor_labs/HBridge.c:17: error: 'DIO_u8PIN1' undeclared (first use in this function)
+../motor_labs/HBridge.c:19: warning: implicit declaration of function 'DIO_u8SetPinValue'
+../motor_labs/HBridge.c:19: error: 'DIO_u8PIN_LOW' undeclared (first use in this function)
+../motor_labs/HBridge.c:20: error: 'DIO_u8PIN_HIGH' undeclared (first use in this function)
+make: *** [motor_labs/HBridge.o] Error 1
+
+12:59:44 Build Finished (took 276ms)
+

@@ -1,0 +1,43 @@
+07:24:07 **** Incremental Build of configuration Debug for project drivers ****
+make all 
+Building file: ../COTS/APP/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"COTS/APP/main.d" -MT"COTS/APP/main.o" -c -o "COTS/APP/main.o" "../COTS/APP/main.c"
+In file included from ../COTS/APP/main.c:16:
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../COTS/APP/main.c:24: warning: return type of 'main' is not 'int'
+../COTS/APP/main.c: In function 'main':
+../COTS/APP/main.c:30: warning: passing argument 1 of 'USART_u8ReceiveStringAsync' from incompatible pointer type
+../COTS/APP/main.c: In function 'receivingDataCallBack':
+../COTS/APP/main.c:36: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+../COTS/APP/main.c:39: warning: pointer targets in passing argument 1 of 'strcmp' differ in signedness
+Finished building: ../COTS/APP/main.c
+ 
+Building target: drivers.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,drivers.map -mmcu=atmega32 -o "drivers.elf"  ./COTS/MCAL/USART/USART_program\ .o  ./COTS/MCAL/TIMERS/TIMERS_program\ .o  ./COTS/MCAL/PORT/PORT_prgram.o  ./COTS/MCAL/GIE/GIE_program\ .o  ./COTS/MCAL/EXTI/EXTI_program\ .o  ./COTS/MCAL/DIO/DIO_program.o  ./COTS/MCAL/ADC/ADC_program\ .o  ./COTS/HAL/STEPPER/STEPPER_program\ .o  ./COTS/HAL/LCD/LCD_program.o  ./COTS/HAL/KeyPad/KEYPAD_program.o  ./COTS/APP/main.o   
+Finished building target: drivers.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S drivers.elf  >"drivers.lss"
+Finished building: drivers.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex drivers.elf  "drivers.hex"
+Finished building: drivers.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 drivers.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   31116 bytes (95.0% Full)
+(.text + .data + .bootloader)
+
+Data:        322 bytes (15.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

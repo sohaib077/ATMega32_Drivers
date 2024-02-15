@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Create method flashing" description="Extract Method Refactoring" fileName="file:/C:/Sohaib/Embedded/AVR_WORK/ass_1.2/main.c" flags="4" id="org.eclipse.cdt.internal.ui.refactoring.extractfunction.ExtractFunctionRefactoring" name="flashing" replaceDuplicates="false" selection="333,80" stamp="1693859365592" visibility="private"/>
+</session>

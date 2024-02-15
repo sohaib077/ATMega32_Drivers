@@ -1,0 +1,40 @@
+10:52:47 **** Incremental Build of configuration Debug for project test ****
+make all 
+Building file: ../COTS/HAL/KeyPad/KEYPAD_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"COTS/HAL/KeyPad/KEYPAD_program.d" -MT"COTS/HAL/KeyPad/KEYPAD_program.o" -c -o "COTS/HAL/KeyPad/KEYPAD_program.o" "../COTS/HAL/KeyPad/KEYPAD_program.c"
+In file included from ../COTS/HAL/KeyPad/KEYPAD_program.c:7:
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../COTS/HAL/KeyPad/KEYPAD_program.c
+ 
+Building target: test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,test.map -mmcu=atmega32 -o "test.elf"  ./COTS/MCAL/DIO/DIO_program.o  ./COTS/HAL/KeyPad/KEYPAD_program.o  ./COTS/HAL/CLCD/CLCD_program.o  ./COTS/APP/main.o   
+Finished building target: test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S test.elf  >"test.lss"
+Finished building: test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex test.elf  "test.hex"
+Finished building: test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   18366 bytes (56.0% Full)
+(.text + .data + .bootloader)
+
+Data:        280 bytes (13.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+10:52:47 Build Finished (took 745ms)
+

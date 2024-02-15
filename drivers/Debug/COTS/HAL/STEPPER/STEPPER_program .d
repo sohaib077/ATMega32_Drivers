@@ -1,0 +1,23 @@
+COTS/HAL/STEPPER/STEPPER_program\ .d COTS/HAL/STEPPER/STEPPER_program\ .o:  \
+ ../COTS/HAL/STEPPER/STEPPER_program\ .c \
+  ../COTS/HAL/STEPPER/../../LIB/STD_TYPES.h \
+  ../COTS/HAL/STEPPER/../../LIB/BIT_MATH.h \
+  ../COTS/HAL/STEPPER/STEPPER_config.h \
+  ../COTS/HAL/STEPPER/STEPPER_private.h \
+  ../COTS/HAL/STEPPER/STEPPER_interface.h \
+  ../COTS/HAL/STEPPER/STEPPER_register.h \
+  ../COTS/HAL/STEPPER/../../MCAL/DIO/DIO_interface.h
+
+../COTS/HAL/STEPPER/../../LIB/STD_TYPES.h:
+
+../COTS/HAL/STEPPER/../../LIB/BIT_MATH.h:
+
+../COTS/HAL/STEPPER/STEPPER_config.h:
+
+../COTS/HAL/STEPPER/STEPPER_private.h:
+
+../COTS/HAL/STEPPER/STEPPER_interface.h:
+
+../COTS/HAL/STEPPER/STEPPER_register.h:
+
+../COTS/HAL/STEPPER/../../MCAL/DIO/DIO_interface.h:

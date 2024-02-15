@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;LABS/USART/Async_Receiving.c&apos; to &apos;Async.c&apos;" description="Rename resource &apos;Async_Receiving.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="USART/Async_Receiving.c" name="Async.c" stamp="1707877859807" updateReferences="true"/>
+</session>

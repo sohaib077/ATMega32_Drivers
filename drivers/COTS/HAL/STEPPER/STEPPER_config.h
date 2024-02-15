@@ -1,0 +1,17 @@
+//
+// Created by sohai on 10/4/2023.
+//
+
+#ifndef STEPPER_CONFIG_H
+#define STEPPER_CONFIG_H
+
+#define STEPPER_MIN_DEGREE	    0.175
+#define STEPPER_FREQUENCY	    100
+
+#define STEPPER_DATA_PORT	    DIO_u8PORTC
+#define STEPPER_COIL_BLUE	    DIO_u8PIN0
+#define STEPPER_COIL_PINK	    DIO_u8PIN1
+#define STEPPER_COIL_YELLOW	    DIO_u8PIN2
+#define STEPPER_COIL_ORANGE	    DIO_u8PIN3
+
+#endif //STEPPER_CONFIG_H

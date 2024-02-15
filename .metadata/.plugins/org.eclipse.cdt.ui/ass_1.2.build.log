@@ -1,0 +1,55 @@
+23:30:45 **** Incremental Build of configuration Debug for project ass_1.2 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:9:
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/delay.h:36:2: warning: #warning "This file has been moved to <util/delay.h>."
+In file included from c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/avr/delay.h:37,
+                 from ../main.c:9:
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../main.c:23: warning: return type of 'main' is not 'int'
+../main.c: In function 'shift_right':
+../main.c:76: warning: suggest parentheses around + or - inside shift
+../main.c:78: warning: suggest parentheses around + or - inside shift
+../main.c: In function 'converging':
+../main.c:85: warning: suggest parentheses around + or - inside shift
+../main.c: In function 'diverging':
+../main.c:93: warning: suggest parentheses around + or - inside shift
+../main.c:94: warning: suggest parentheses around + or - inside shift
+../main.c: In function 'converging_diverging':
+../main.c:105: warning: suggest parentheses around + or - inside shift
+../main.c:106: warning: suggest parentheses around + or - inside shift
+Finished building: ../main.c
+ 
+Building target: ass_1.2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ass_1.2.map -mmcu=atmega32 -o "ass_1.2.elf"  ./main.o   
+Finished building target: ass_1.2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ass_1.2.elf  >"ass_1.2.lss"
+Finished building: ass_1.2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex ass_1.2.elf  "ass_1.2.hex"
+Finished building: ass_1.2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ass_1.2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    6050 bytes (18.5% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+23:30:46 Build Finished (took 730ms)
+

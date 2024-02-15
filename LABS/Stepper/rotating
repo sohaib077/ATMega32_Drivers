@@ -1,0 +1,70 @@
+/*
+ * main.c
+ *
+ *  Created on: Sep 10, 2023
+ *      Author: sohai
+ */
+#include "../LIB/STD_TYPES.h"
+#include "../MCAL/DIO/DIO_interface.h"
+#include "../HAL/LCD/LCD_config.h"
+#include "../HAL/LCD/LCD_interface.h"
+#include <util/delay.h>
+
+#define MIN_DEGREE	0.175
+#define DATA_PORT	DIO_u8PORTC
+#define COIL_BLUE	DIO_u8PIN0
+#define COIL_PINK	DIO_u8PIN1
+#define COIL_YELLOW	DIO_u8PIN2
+#define COIL_ORANGE	DIO_u8PIN3
+
+void main() {
+	DIO_u8SetPortDirection(DATA_PORT, DIO_u8PORT_OUTPUT);
+	while (1) {
+		for (u32 i = 0; i < 257; i++) {
+			DIO_u8SetPinValue(DATA_PORT, COIL_BLUE, DIO_u8PIN_HIGH);
+			DIO_u8SetPinValue(DATA_PORT, COIL_PINK, DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(DATA_PORT, COIL_ORANGE, DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(DATA_PORT, COIL_YELLOW, DIO_u8PIN_LOW);
+			_delay_ms(2);
+			DIO_u8SetPinValue(DATA_PORT, COIL_BLUE, DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(DATA_PORT, COIL_PINK, DIO_u8PIN_HIGH);
+			DIO_u8SetPinValue(DATA_PORT, COIL_ORANGE, DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(DATA_PORT, COIL_YELLOW, DIO_u8PIN_LOW);
+			_delay_ms(2);
+			DIO_u8SetPinValue(DATA_PORT, COIL_BLUE, DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(DATA_PORT, COIL_PINK, DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(DATA_PORT, COIL_ORANGE, DIO_u8PIN_HIGH);
+			DIO_u8SetPinValue(DATA_PORT, COIL_YELLOW, DIO_u8PIN_LOW);
+			_delay_ms(2);
+			DIO_u8SetPinValue(DATA_PORT, COIL_BLUE, DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(DATA_PORT, COIL_PINK, DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(DATA_PORT, COIL_ORANGE, DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(DATA_PORT, COIL_YELLOW, DIO_u8PIN_HIGH);
+			_delay_ms(2);
+		}
+		for (u32 i = 0; i < 257; i++) {
+			DIO_u8SetPinValue(DATA_PORT, COIL_BLUE, DIO_u8PIN_HIGH);
+			DIO_u8SetPinValue(DATA_PORT, COIL_YELLOW, DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(DATA_PORT, COIL_ORANGE, DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(DATA_PORT, COIL_PINK, DIO_u8PIN_LOW);
+			_delay_ms(2);
+			DIO_u8SetPinValue(DATA_PORT, COIL_BLUE, DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(DATA_PORT, COIL_YELLOW, DIO_u8PIN_HIGH);
+			DIO_u8SetPinValue(DATA_PORT, COIL_ORANGE, DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(DATA_PORT, COIL_PINK, DIO_u8PIN_LOW);
+			_delay_ms(2);
+			DIO_u8SetPinValue(DATA_PORT, COIL_BLUE, DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(DATA_PORT, COIL_YELLOW, DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(DATA_PORT, COIL_ORANGE, DIO_u8PIN_HIGH);
+			DIO_u8SetPinValue(DATA_PORT, COIL_PINK, DIO_u8PIN_LOW);
+			_delay_ms(2);
+			DIO_u8SetPinValue(DATA_PORT, COIL_BLUE, DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(DATA_PORT, COIL_YELLOW, DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(DATA_PORT, COIL_ORANGE, DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(DATA_PORT, COIL_PINK, DIO_u8PIN_HIGH);
+			_delay_ms(2);
+		}
+
+	}
+}
+

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;LABS/EXTI/ToggleLed&apos;" deleteContents="false" description="Delete resource &apos;LABS/EXTI/ToggleLed&apos;" element1="/LABS/EXTI/ToggleLed" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1696772457896"/>
+</session>

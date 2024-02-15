@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;LABS/Relay/main.c&apos; to &apos;HBridge.c&apos;" description="Rename resource &apos;main.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Relay/main.c" name="HBridge.c" stamp="1696147907043" updateReferences="true"/>
+</session>

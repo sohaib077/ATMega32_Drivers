@@ -1,0 +1,38 @@
+14:49:10 **** Incremental Build of configuration Debug for project drivers2 ****
+make all 
+Building file: ../DIO_program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_program.d" -MT"DIO_program.o" -c -o "DIO_program.o" "../DIO_program.c"
+Finished building: ../DIO_program.c
+ 
+Building target: drivers2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,drivers2.map -mmcu=atmega32 -o "drivers2.elf"  ./DIO_program.o ./main.o   
+Finished building target: drivers2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S drivers2.elf  >"drivers2.lss"
+Finished building: drivers2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex drivers2.elf  "drivers2.hex"
+Finished building: drivers2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 drivers2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    1998 bytes (6.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+14:49:11 Build Finished (took 667ms)
+

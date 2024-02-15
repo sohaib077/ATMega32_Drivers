@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;LABS/Full_Calculator/Full_Calculator&apos; to &apos;Full_Calculator.c&apos;" description="Rename resource &apos;Full_Calculator&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Full_Calculator/Full_Calculator" name="Full_Calculator.c" stamp="1697180757349" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;LABS/ADC/LM35_Sensor&apos; to &apos;LM35_Sensor.c&apos;" description="Rename resource &apos;LM35_Sensor&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="ADC/LM35_Sensor" name="LM35_Sensor.c" stamp="1697261789952" updateReferences="true"/>
+</session>

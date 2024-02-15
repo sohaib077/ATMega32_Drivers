@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;LABS/TIMERS/rotating_servo&apos; to &apos;rotating_servo.v&apos;" description="Rename resource &apos;rotating_servo&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="TIMERS/rotating_servo" name="rotating_servo.v" stamp="1698352596975" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;LABS/TIMERS/rotating_servo.v&apos; to &apos;rotating_servo.c&apos;" description="Rename resource &apos;rotating_servo.v&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="TIMERS/rotating_servo.v" name="rotating_servo.c" stamp="1698352602364" updateReferences="true"/>
+</session>
