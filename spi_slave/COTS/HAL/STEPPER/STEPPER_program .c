@@ -1,0 +1,87 @@
+//
+// Created by sohai on 10/4/2023.
+//
+
+#include "../../LIB/STD_TYPES.h"
+#include "../../LIB/BIT_MATH.h"
+
+#include "STEPPER_config.h"
+#include "STEPPER_private.h"
+#include "STEPPER_interface.h"
+#include "STEPPER_register.h"
+#include "../../MCAL/DIO/DIO_interface.h"
+#include <util/delay.h>
+
+void STEPPER_voidRotateClockWise() {
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_BLUE, DIO_u8PIN_HIGH);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_PINK, DIO_u8PIN_LOW);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_ORANGE, DIO_u8PIN_LOW);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_YELLOW, DIO_u8PIN_LOW);
+	_delay_ms(10);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_BLUE, DIO_u8PIN_LOW);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_PINK, DIO_u8PIN_HIGH);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_ORANGE, DIO_u8PIN_LOW);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_YELLOW, DIO_u8PIN_LOW);
+	_delay_ms(10);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_BLUE, DIO_u8PIN_LOW);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_PINK, DIO_u8PIN_LOW);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_ORANGE, DIO_u8PIN_HIGH);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_YELLOW, DIO_u8PIN_LOW);
+	_delay_ms(10);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_BLUE, DIO_u8PIN_LOW);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_PINK, DIO_u8PIN_LOW);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_ORANGE, DIO_u8PIN_LOW);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_YELLOW, DIO_u8PIN_HIGH);
+	_delay_ms(10);
+}
+
+void STEPPER_voidRotateCOUNTERClockWise() {
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_BLUE, DIO_u8PIN_HIGH);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_YELLOW, DIO_u8PIN_LOW);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_ORANGE, DIO_u8PIN_LOW);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_PINK, DIO_u8PIN_LOW);
+	_delay_ms(10);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_BLUE, DIO_u8PIN_LOW);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_YELLOW, DIO_u8PIN_HIGH);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_ORANGE, DIO_u8PIN_LOW);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_PINK, DIO_u8PIN_LOW);
+	_delay_ms(10);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_BLUE, DIO_u8PIN_LOW);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_YELLOW, DIO_u8PIN_LOW);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_ORANGE, DIO_u8PIN_HIGH);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_PINK, DIO_u8PIN_LOW);
+	_delay_ms(10);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_BLUE, DIO_u8PIN_LOW);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_YELLOW, DIO_u8PIN_LOW);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_ORANGE, DIO_u8PIN_LOW);
+	DIO_u8SetPinValue(STEPPER_DATA_PORT, STEPPER_COIL_PINK, DIO_u8PIN_HIGH);
+	_delay_ms(10);
+}
+
+u8 STEPPER_u8RotateByDegrees(u32 Copy_u32Degree, u8 Copy_u8Direction) {
+	u32 Local_u32Revolution = Copy_u32Degree / (STEPPER_MIN_DEGREE * 4);
+	if (Copy_u8Direction == STEPPER_CW_DIR)
+		for (u32 i = 0; i < Local_u32Revolution; ++i)
+			STEPPER_voidRotateClockWise();
+	else if (Copy_u8Direction == STEPPER_CCW_DIR)
+		for (u32 i = 0; i < Local_u32Revolution; ++i)
+			STEPPER_voidRotateCOUNTERClockWise();
+	else
+		return 1;
+	return 0;
+}
+
+u8 STEPPER_u8RotateBySeconds(u32 Copy_u32Second, u8 Copy_u8Direction) {
+	u32 Local_u32Revolution = Copy_u32Second * (STEPPER_FREQUENCY / 4);
+	if (Copy_u8Direction == STEPPER_CW_DIR)
+		for (u32 i = 0; i < Local_u32Revolution; ++i)
+			STEPPER_voidRotateClockWise();
+	else if (Copy_u8Direction == STEPPER_CCW_DIR)
+		for (u32 i = 0; i < Local_u32Revolution; ++i)
+			STEPPER_voidRotateCOUNTERClockWise();
+	else
+		return 1;
+	return 0;
+
+}
+

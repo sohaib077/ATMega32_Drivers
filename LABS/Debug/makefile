@@ -11,8 +11,13 @@ RM := rm -rf
 -include motor_labs/subdir.mk
 -include lcd_labs/subdir.mk
 -include keypad_labs/subdir.mk
+-include USART/subdir.mk
+-include TIMERS/subdir.mk
+-include SPI/subdir.mk
 -include Relay/subdir.mk
+-include Full_Calculator/subdir.mk
 -include EXTI/subdir.mk
+-include ADC/subdir.mk
 -include subdir.mk
 -include objects.mk
 

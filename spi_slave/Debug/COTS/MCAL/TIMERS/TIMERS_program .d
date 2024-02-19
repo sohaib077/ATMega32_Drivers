@@ -1,0 +1,20 @@
+COTS/MCAL/TIMERS/TIMERS_program\ .d COTS/MCAL/TIMERS/TIMERS_program\ .o:  \
+ ../COTS/MCAL/TIMERS/TIMERS_program\ .c \
+  ../COTS/MCAL/TIMERS/../../LIB/STD_TYPES.h \
+  ../COTS/MCAL/TIMERS/../../LIB/BIT_MATH.h \
+  ../COTS/MCAL/TIMERS/TIMERS_config.h \
+  ../COTS/MCAL/TIMERS/TIMERS_private.h \
+  ../COTS/MCAL/TIMERS/TIMERS_interface.h \
+  ../COTS/MCAL/TIMERS/TIMERS_register.h
+
+../COTS/MCAL/TIMERS/../../LIB/STD_TYPES.h:
+
+../COTS/MCAL/TIMERS/../../LIB/BIT_MATH.h:
+
+../COTS/MCAL/TIMERS/TIMERS_config.h:
+
+../COTS/MCAL/TIMERS/TIMERS_private.h:
+
+../COTS/MCAL/TIMERS/TIMERS_interface.h:
+
+../COTS/MCAL/TIMERS/TIMERS_register.h:

@@ -1,0 +1,1115 @@
+Archive member included because of file (symbol)
+
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                              ./COTS/HAL/STEPPER/STEPPER_program .o (__mulsi3)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+                              ./COTS/HAL/LCD/LCD_program.o (__divmodsi4)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              ./COTS/MCAL/ADC/ADC_program .o (__do_copy_data)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./COTS/MCAL/USART/USART_program .o (__do_clear_bss)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashldi3.o)
+                              ./COTS/HAL/LCD/LCD_program.o (__ashldi3)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+                              ./COTS/HAL/STEPPER/STEPPER_program .o (__fixunssfsi)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixsfdi.o)
+                              ./COTS/HAL/LCD/LCD_program.o (__fixsfdi)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfdi.o)
+                              c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixsfdi.o) (__fixunssfdi)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_floatdisf.o)
+                              ./COTS/HAL/LCD/LCD_program.o (__floatdisf)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divdi3.o)
+                              ./COTS/HAL/LCD/LCD_program.o (__divdi3)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_moddi3.o)
+                              ./COTS/HAL/LCD/LCD_program.o (__moddi3)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+                              c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o) (__subsf3)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+                              ./COTS/HAL/STEPPER/STEPPER_program .o (__mulsf3)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+                              ./COTS/HAL/STEPPER/STEPPER_program .o (__divsf3)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_eq_sf.o)
+                              ./COTS/HAL/LCD/LCD_program.o (__eqsf2)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ne_sf.o)
+                              ./COTS/HAL/LCD/LCD_program.o (__nesf2)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+                              ./COTS/HAL/STEPPER/STEPPER_program .o (__gtsf2)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+                              c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o) (__gesf2)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+                              ./COTS/HAL/STEPPER/STEPPER_program .o (__ltsf2)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+                              c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_floatdisf.o) (__floatsisf)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+                              c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o) (__fixsfsi)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+                              c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o) (__thenan_sf)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
+                              ./COTS/HAL/STEPPER/STEPPER_program .o (__floatunsisf)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                              c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o) (__udivmodsi4)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                              c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfdi.o) (__prologue_saves__)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                              c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfdi.o) (__epilogue_restores__)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashrdi3.o)
+                              c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_floatdisf.o) (__ashrdi3)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
+                              c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_floatdisf.o) (__clz_tab)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+                              c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o) (__clzsi2)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+                              c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o) (__pack_f)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+                              c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o) (__unpack_f)
+c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+                              c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_eq_sf.o) (__fpcmp_parts_f)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./COTS/MCAL/USART/USART_program .o
+LOAD ./COTS/MCAL/TIMERS/TIMERS_program .o
+LOAD ./COTS/MCAL/SPI/SPI_program .o
+LOAD ./COTS/MCAL/PORT/PORT_prgram.o
+LOAD ./COTS/MCAL/GIE/GIE_program .o
+LOAD ./COTS/MCAL/EXTI/EXTI_program .o
+LOAD ./COTS/MCAL/DIO/DIO_program.o
+LOAD ./COTS/MCAL/ADC/ADC_program .o
+LOAD ./COTS/HAL/STEPPER/STEPPER_program .o
+LOAD ./COTS/HAL/LCD/LCD_program.o
+LOAD ./COTS/HAL/KeyPad/KEYPAD_program.o
+LOAD ./COTS/APP/main.o
+LOAD c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x7b86
+ *(.vectors)
+ .vectors       0x00000000       0x54 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ .init4         0x00000076       0x10 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000076                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000086        0x8 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x0000008e        0x4 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x0000008e                __bad_interrupt
+                0x0000008e                __vector_6
+                0x0000008e                __vector_17
+                0x0000008e                __vector_19
+                0x0000008e                __vector_7
+                0x0000008e                __vector_5
+                0x0000008e                __vector_4
+                0x0000008e                __vector_9
+                0x0000008e                __vector_8
+                0x0000008e                __vector_18
+                0x0000008e                __vector_20
+ .text          0x00000092        0x0 ./COTS/MCAL/USART/USART_program .o
+ .text          0x00000092        0x0 ./COTS/MCAL/TIMERS/TIMERS_program .o
+ .text          0x00000092        0x0 ./COTS/MCAL/SPI/SPI_program .o
+ .text          0x00000092        0x0 ./COTS/MCAL/PORT/PORT_prgram.o
+ .text          0x00000092        0x0 ./COTS/MCAL/GIE/GIE_program .o
+ .text          0x00000092        0x0 ./COTS/MCAL/EXTI/EXTI_program .o
+ .text          0x00000092        0x0 ./COTS/MCAL/DIO/DIO_program.o
+ .text          0x00000092        0x0 ./COTS/MCAL/ADC/ADC_program .o
+ .text          0x00000092        0x0 ./COTS/HAL/STEPPER/STEPPER_program .o
+ .text          0x00000092        0x0 ./COTS/HAL/LCD/LCD_program.o
+ .text          0x00000092        0x0 ./COTS/HAL/KeyPad/KEYPAD_program.o
+ .text          0x00000092        0x0 ./COTS/APP/main.o
+ .text          0x00000092        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .text          0x00000092        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .text          0x00000092        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00000092        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000092        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000092       0xfe c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashldi3.o)
+                0x00000092                __ashldi3
+ .text          0x00000190       0x58 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+                0x00000190                __fixunssfsi
+ .text          0x000001e8       0xe8 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixsfdi.o)
+                0x000001e8                __fixsfdi
+ .text          0x000002d0      0x150 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfdi.o)
+                0x000002d0                __fixunssfdi
+ .text          0x00000420      0x1f6 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_floatdisf.o)
+                0x00000420                __floatdisf
+ .text          0x00000616     0x1050 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divdi3.o)
+                0x00000616                __divdi3
+ .text          0x00001666     0x107a c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_moddi3.o)
+                0x00001666                __moddi3
+ .text          0x000026e0      0x354 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+                0x00002978                __subsf3
+                0x000029da                __addsf3
+ .text          0x00002a34      0x1f4 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+                0x00002a34                __mulsf3
+ .text          0x00002c28      0x158 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+                0x00002c28                __divsf3
+ .text          0x00002d80       0x60 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_eq_sf.o)
+                0x00002d80                __eqsf2
+ .text          0x00002de0       0x60 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ne_sf.o)
+                0x00002de0                __nesf2
+ .text          0x00002e40       0x60 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+                0x00002e40                __gtsf2
+ .text          0x00002ea0       0x60 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+                0x00002ea0                __gesf2
+ .text          0x00002f00       0x60 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+                0x00002f00                __ltsf2
+ .text          0x00002f60       0xbc c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+                0x00002f60                __floatsisf
+ .text          0x0000301c       0xa8 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+                0x0000301c                __fixsfsi
+ .text          0x000030c4        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .text          0x000030c4       0xf2 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
+                0x000030c4                __floatunsisf
+ .text          0x000031b6        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x000031b6        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .text          0x000031b6        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+ .text          0x000031b6      0x10a c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashrdi3.o)
+                0x000031b6                __ashrdi3
+ .text          0x000032c0        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
+ .text          0x000032c0       0x9e c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+                0x000032c0                __clzsi2
+ .text          0x0000335e      0x1aa c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+                0x0000335e                __pack_f
+ .text          0x00003508       0xf0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+                0x00003508                __unpack_f
+ .text          0x000035f8       0xb2 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+                0x000035f8                __fpcmp_parts_f
+                0x000036aa                . = ALIGN (0x2)
+ *(.text.*)
+ .text.USART_voidInit
+                0x000036aa       0x94 ./COTS/MCAL/USART/USART_program .o
+                0x000036aa                USART_voidInit
+ .text.USART_u8ReceiveData
+                0x0000373e       0xc2 ./COTS/MCAL/USART/USART_program .o
+                0x0000373e                USART_u8ReceiveData
+ .text.USART_u8SendData
+                0x00003800       0xbc ./COTS/MCAL/USART/USART_program .o
+                0x00003800                USART_u8SendData
+ .text.USART_u8ReceiveDataAsync
+                0x000038bc       0x90 ./COTS/MCAL/USART/USART_program .o
+                0x000038bc                USART_u8ReceiveDataAsync
+ .text.USART_u8SendDataAsync
+                0x0000394c       0x42 ./COTS/MCAL/USART/USART_program .o
+                0x0000394c                USART_u8SendDataAsync
+ .text.USART_u8ReceiveStringAsync
+                0x0000398e       0x7a ./COTS/MCAL/USART/USART_program .o
+                0x0000398e                USART_u8ReceiveStringAsync
+ .text.USART_u8SendStringAsync
+                0x00003a08       0x90 ./COTS/MCAL/USART/USART_program .o
+                0x00003a08                USART_u8SendStringAsync
+ .text.__vector_13
+                0x00003a98      0x110 ./COTS/MCAL/USART/USART_program .o
+                0x00003a98                __vector_13
+ .text.__vector_15
+                0x00003ba8       0xb0 ./COTS/MCAL/USART/USART_program .o
+                0x00003ba8                __vector_15
+ .text.__vector_14
+                0x00003c58       0x50 ./COTS/MCAL/USART/USART_program .o
+                0x00003c58                __vector_14
+ .text.chooseCompareMatchOutMode
+                0x00003ca8       0x2a ./COTS/MCAL/TIMERS/TIMERS_program .o
+ .text.TIMER0_voidInit
+                0x00003cd2       0x52 ./COTS/MCAL/TIMERS/TIMERS_program .o
+                0x00003cd2                TIMER0_voidInit
+ .text.TIMERS_u8Timer0SetCallBack
+                0x00003d24       0x44 ./COTS/MCAL/TIMERS/TIMERS_program .o
+                0x00003d24                TIMERS_u8Timer0SetCallBack
+ .text.TIMERS_u8Timer0CTCSetCallBack
+                0x00003d68       0x44 ./COTS/MCAL/TIMERS/TIMERS_program .o
+                0x00003d68                TIMERS_u8Timer0CTCSetCallBack
+ .text.TIMERS_voidTimer0SetCompareMatchValue
+                0x00003dac       0x1c ./COTS/MCAL/TIMERS/TIMERS_program .o
+                0x00003dac                TIMERS_voidTimer0SetCompareMatchValue
+ .text.TIMER1_voidInit
+                0x00003dc8       0x70 ./COTS/MCAL/TIMERS/TIMERS_program .o
+                0x00003dc8                TIMER1_voidInit
+ .text.TIMER1_voidSetCompareMatchValueA
+                0x00003e38       0x24 ./COTS/MCAL/TIMERS/TIMERS_program .o
+                0x00003e38                TIMER1_voidSetCompareMatchValueA
+ .text.TIMER1_voidSetTimerValue
+                0x00003e5c       0x24 ./COTS/MCAL/TIMERS/TIMERS_program .o
+                0x00003e5c                TIMER1_voidSetTimerValue
+ .text.TIMER1_u16ReadTimerValue
+                0x00003e80       0x16 ./COTS/MCAL/TIMERS/TIMERS_program .o
+                0x00003e80                TIMER1_u16ReadTimerValue
+ .text.__vector_11
+                0x00003e96       0x98 ./COTS/MCAL/TIMERS/TIMERS_program .o
+                0x00003e96                __vector_11
+ .text.__vector_10
+                0x00003f2e       0x90 ./COTS/MCAL/TIMERS/TIMERS_program .o
+                0x00003f2e                __vector_10
+ .text.SPI_VoidMasterInit
+                0x00003fbe       0x7e ./COTS/MCAL/SPI/SPI_program .o
+                0x00003fbe                SPI_VoidMasterInit
+ .text.SPI_VoidSlaveInit
+                0x0000403c       0x54 ./COTS/MCAL/SPI/SPI_program .o
+                0x0000403c                SPI_VoidSlaveInit
+ .text.SPI_VoidTransceiveSync
+                0x00004090       0xb4 ./COTS/MCAL/SPI/SPI_program .o
+                0x00004090                SPI_VoidTransceiveSync
+ .text.SPI_VoidTransceiveAsync
+                0x00004144       0x80 ./COTS/MCAL/SPI/SPI_program .o
+                0x00004144                SPI_VoidTransceiveAsync
+ .text.__vector_12
+                0x000041c4       0x7c ./COTS/MCAL/SPI/SPI_program .o
+                0x000041c4                __vector_12
+ .text.PORT_voidInit
+                0x00004240       0x4a ./COTS/MCAL/PORT/PORT_prgram.o
+                0x00004240                PORT_voidInit
+ .text.GIE_voidEnable
+                0x0000428a       0x1c ./COTS/MCAL/GIE/GIE_program .o
+                0x0000428a                GIE_voidEnable
+ .text.GIE_voidDisable
+                0x000042a6       0x1c ./COTS/MCAL/GIE/GIE_program .o
+                0x000042a6                GIE_voidDisable
+ .text.EXTI_u8Checker
+                0x000042c2       0x3a ./COTS/MCAL/EXTI/EXTI_program .o
+ .text.EXTI_u8EXTIEnable
+                0x000042fc      0x240 ./COTS/MCAL/EXTI/EXTI_program .o
+                0x000042fc                EXTI_u8EXTIEnable
+ .text.EXTI_u8EXTIDisable
+                0x0000453c       0x86 ./COTS/MCAL/EXTI/EXTI_program .o
+                0x0000453c                EXTI_u8EXTIDisable
+ .text.EXTI_u8SetSenceControl
+                0x000045c2      0x21a ./COTS/MCAL/EXTI/EXTI_program .o
+                0x000045c2                EXTI_u8SetSenceControl
+ .text.EXTI_u8EXTISetCallBack
+                0x000047dc       0x56 ./COTS/MCAL/EXTI/EXTI_program .o
+                0x000047dc                EXTI_u8EXTISetCallBack
+ .text.__vector_1
+                0x00004832       0x66 ./COTS/MCAL/EXTI/EXTI_program .o
+                0x00004832                __vector_1
+ .text.__vector_2
+                0x00004898       0x66 ./COTS/MCAL/EXTI/EXTI_program .o
+                0x00004898                __vector_2
+ .text.__vector_3
+                0x000048fe       0x66 ./COTS/MCAL/EXTI/EXTI_program .o
+                0x000048fe                __vector_3
+ .text.portChecker
+                0x00004964       0x24 ./COTS/MCAL/DIO/DIO_program.o
+ .text.pinChecker
+                0x00004988       0x24 ./COTS/MCAL/DIO/DIO_program.o
+ .text.directionChecker
+                0x000049ac       0x24 ./COTS/MCAL/DIO/DIO_program.o
+ .text.DIO_u8SetPinDirection
+                0x000049d0      0x220 ./COTS/MCAL/DIO/DIO_program.o
+                0x000049d0                DIO_u8SetPinDirection
+ .text.DIO_u8SetPortDirection
+                0x00004bf0       0x9a ./COTS/MCAL/DIO/DIO_program.o
+                0x00004bf0                DIO_u8SetPortDirection
+ .text.DIO_u8SetPinValue
+                0x00004c8a      0x21c ./COTS/MCAL/DIO/DIO_program.o
+                0x00004c8a                DIO_u8SetPinValue
+ .text.DIO_u8SetPortValue
+                0x00004ea6       0x9a ./COTS/MCAL/DIO/DIO_program.o
+                0x00004ea6                DIO_u8SetPortValue
+ .text.DIO_u8GetPinValue
+                0x00004f40      0x134 ./COTS/MCAL/DIO/DIO_program.o
+                0x00004f40                DIO_u8GetPinValue
+ .text.ADC_voidInit
+                0x00005074       0x66 ./COTS/MCAL/ADC/ADC_program .o
+                0x00005074                ADC_voidInit
+ .text.ADC_voidEnable
+                0x000050da       0x1c ./COTS/MCAL/ADC/ADC_program .o
+                0x000050da                ADC_voidEnable
+ .text.ADC_voidDisable
+                0x000050f6       0x1c ./COTS/MCAL/ADC/ADC_program .o
+                0x000050f6                ADC_voidDisable
+ .text.ADC_voidEnableInterrupt
+                0x00005112       0x1c ./COTS/MCAL/ADC/ADC_program .o
+                0x00005112                ADC_voidEnableInterrupt
+ .text.ADC_voidDisableInterrupt
+                0x0000512e       0x1c ./COTS/MCAL/ADC/ADC_program .o
+                0x0000512e                ADC_voidDisableInterrupt
+ .text.ADC_voidStartConversion
+                0x0000514a       0x40 ./COTS/MCAL/ADC/ADC_program .o
+                0x0000514a                ADC_voidStartConversion
+ .text.ADC_u16ReadSynchronous
+                0x0000518a      0x134 ./COTS/MCAL/ADC/ADC_program .o
+                0x0000518a                ADC_u16ReadSynchronous
+ .text.ADC_u16ReadAsynchronous
+                0x000052be       0x70 ./COTS/MCAL/ADC/ADC_program .o
+                0x000052be                ADC_u16ReadAsynchronous
+ .text.__vector_16
+                0x0000532e       0xd8 ./COTS/MCAL/ADC/ADC_program .o
+                0x0000532e                __vector_16
+ .text.STEPPER_voidRotateClockWise
+                0x00005406      0x456 ./COTS/HAL/STEPPER/STEPPER_program .o
+                0x00005406                STEPPER_voidRotateClockWise
+ .text.STEPPER_voidRotateCOUNTERClockWise
+                0x0000585c      0x456 ./COTS/HAL/STEPPER/STEPPER_program .o
+                0x0000585c                STEPPER_voidRotateCOUNTERClockWise
+ .text.STEPPER_u8RotateByDegrees
+                0x00005cb2       0xfe ./COTS/HAL/STEPPER/STEPPER_program .o
+                0x00005cb2                STEPPER_u8RotateByDegrees
+ .text.STEPPER_u8RotateBySeconds
+                0x00005db0       0xea ./COTS/HAL/STEPPER/STEPPER_program .o
+                0x00005db0                STEPPER_u8RotateBySeconds
+ .text.LCD_voidSendCommand
+                0x00005e9a      0x13c ./COTS/HAL/LCD/LCD_program.o
+                0x00005e9a                LCD_voidSendCommand
+ .text.LCD_voidSendData
+                0x00005fd6      0x13c ./COTS/HAL/LCD/LCD_program.o
+                0x00005fd6                LCD_voidSendData
+ .text.LCD_voidSendString
+                0x00006112       0x52 ./COTS/HAL/LCD/LCD_program.o
+                0x00006112                LCD_voidSendString
+ .text.LCD_voidInit
+                0x00006164      0x11c ./COTS/HAL/LCD/LCD_program.o
+                0x00006164                LCD_voidInit
+ .text.LCD_voidShiftDisplayRight
+                0x00006280      0x126 ./COTS/HAL/LCD/LCD_program.o
+                0x00006280                LCD_voidShiftDisplayRight
+ .text.LCD_voidShiftDisplayLeft
+                0x000063a6      0x126 ./COTS/HAL/LCD/LCD_program.o
+                0x000063a6                LCD_voidShiftDisplayLeft
+ .text.LCD_voidSetDDRAMAddress
+                0x000064cc       0x4a ./COTS/HAL/LCD/LCD_program.o
+                0x000064cc                LCD_voidSetDDRAMAddress
+ .text.LCD_voidWriteSpecialCharacter
+                0x00006516       0xac ./COTS/HAL/LCD/LCD_program.o
+                0x00006516                LCD_voidWriteSpecialCharacter
+ .text.LCD_voidWriteSpecialString
+                0x000065c2       0x84 ./COTS/HAL/LCD/LCD_program.o
+                0x000065c2                LCD_voidWriteSpecialString
+ .text.LCD_voidWriteNumber
+                0x00006646     0x10b6 ./COTS/HAL/LCD/LCD_program.o
+                0x00006646                LCD_voidWriteNumber
+ .text.KEYPAD_voidInit
+                0x000076fc       0x66 ./COTS/HAL/KeyPad/KEYPAD_program.o
+                0x000076fc                KEYPAD_voidInit
+ .text.KEYPAD_u8GetSwitchValue
+                0x00007762      0x1c2 ./COTS/HAL/KeyPad/KEYPAD_program.o
+                0x00007762                KEYPAD_u8GetSwitchValue
+ .text.main     0x00007924      0x12a ./COTS/APP/main.o
+                0x00007924                main
+ .text.SPI_voidCallBack
+                0x00007a4e        0xe ./COTS/APP/main.o
+                0x00007a4e                SPI_voidCallBack
+ .text.libgcc   0x00007a5c       0x3e c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                0x00007a5c                __mulsi3
+ .text.libgcc   0x00007a9a       0x36 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+                0x00007a9a                __divmodsi4
+ .text.libgcc   0x00007ad0        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00007ad0        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00007ad0        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00007ad0       0x44 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x00007ad0                __udivmodsi4
+ .text.libgcc   0x00007b14       0x38 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x00007b14                __prologue_saves__
+ .text.libgcc   0x00007b4c       0x36 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x00007b4c                __epilogue_restores__
+                0x00007b82                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00007b82        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00007b82                exit
+                0x00007b82                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00007b82        0x4 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00007b86                _etext = .
+
+.data           0x00800060      0x11a load address 0x00007b86
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./COTS/MCAL/USART/USART_program .o
+ .data          0x00800060        0x0 ./COTS/MCAL/TIMERS/TIMERS_program .o
+ .data          0x00800060        0x0 ./COTS/MCAL/SPI/SPI_program .o
+ .data          0x00800060        0x0 ./COTS/MCAL/PORT/PORT_prgram.o
+ .data          0x00800060        0x0 ./COTS/MCAL/GIE/GIE_program .o
+ .data          0x00800060        0x0 ./COTS/MCAL/EXTI/EXTI_program .o
+ .data          0x00800060        0x0 ./COTS/MCAL/DIO/DIO_program.o
+ .data          0x00800060        0x0 ./COTS/MCAL/ADC/ADC_program .o
+ .data          0x00800060        0x0 ./COTS/HAL/STEPPER/STEPPER_program .o
+ .data          0x00800060        0x0 ./COTS/HAL/LCD/LCD_program.o
+ .data          0x00800060        0x0 ./COTS/HAL/KeyPad/KEYPAD_program.o
+ .data          0x00800060        0x0 ./COTS/APP/main.o
+ .data          0x00800060        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .data          0x00800060        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .data          0x00800060        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x00800060        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .data          0x00800060        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashldi3.o)
+ .data          0x00800060        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .data          0x00800060        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixsfdi.o)
+ .data          0x00800060        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfdi.o)
+ .data          0x00800060        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_floatdisf.o)
+ .data          0x00800060        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divdi3.o)
+ .data          0x00800060        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_moddi3.o)
+ .data          0x00800060        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .data          0x00800060        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .data          0x00800060        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+ .data          0x00800060        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_eq_sf.o)
+ .data          0x00800060        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ne_sf.o)
+ .data          0x00800060        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .data          0x00800060        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .data          0x00800060        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .data          0x00800060        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+ .data          0x00800060        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .data          0x00800060        0x8 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+                0x00800060                __thenan_sf
+ .data          0x00800068        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
+ .data          0x00800068        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x00800068        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .data          0x00800068        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+ .data          0x00800068        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashrdi3.o)
+ .data          0x00800068      0x100 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
+                0x00800068                __clz_tab
+ .data          0x00800168        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+ .data          0x00800168        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .data          0x00800168        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .data          0x00800168        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+ *(.data*)
+ .data.ADC_u8BusyFlag
+                0x00800168        0x1 ./COTS/MCAL/ADC/ADC_program .o
+ .data.KEYPAD_u8ArrValues
+                0x00800169       0x10 ./COTS/HAL/KeyPad/KEYPAD_program.o
+                0x00800169                KEYPAD_u8ArrValues
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x0080017a                . = ALIGN (0x2)
+ *fill*         0x00800179        0x1 00
+                0x0080017a                _edata = .
+                0x0080017a                PROVIDE (__data_end, .)
+
+.bss            0x0080017a       0x23
+                0x0080017a                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x0080017a        0x0 ./COTS/MCAL/USART/USART_program .o
+ .bss           0x0080017a        0x0 ./COTS/MCAL/TIMERS/TIMERS_program .o
+ .bss           0x0080017a        0x0 ./COTS/MCAL/SPI/SPI_program .o
+ .bss           0x0080017a        0x0 ./COTS/MCAL/PORT/PORT_prgram.o
+ .bss           0x0080017a        0x0 ./COTS/MCAL/GIE/GIE_program .o
+ .bss           0x0080017a        0x0 ./COTS/MCAL/EXTI/EXTI_program .o
+ .bss           0x0080017a        0x0 ./COTS/MCAL/DIO/DIO_program.o
+ .bss           0x0080017a        0x0 ./COTS/MCAL/ADC/ADC_program .o
+ .bss           0x0080017a        0x0 ./COTS/HAL/STEPPER/STEPPER_program .o
+ .bss           0x0080017a        0x0 ./COTS/HAL/LCD/LCD_program.o
+ .bss           0x0080017a        0x0 ./COTS/HAL/KeyPad/KEYPAD_program.o
+ .bss           0x0080017a        0x0 ./COTS/APP/main.o
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashldi3.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixsfdi.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfdi.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_floatdisf.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divdi3.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_moddi3.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_eq_sf.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ne_sf.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashrdi3.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .bss           0x0080017a        0x0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+ *(.bss*)
+ .bss.USART_u8State
+                0x0080017a        0x1 ./COTS/MCAL/USART/USART_program .o
+ .bss.USART_pu8ReceivedData
+                0x0080017b        0x2 ./COTS/MCAL/USART/USART_program .o
+ .bss.USART_pu8SendData
+                0x0080017d        0x1 ./COTS/MCAL/USART/USART_program .o
+ .bss.USART_pu8StringData
+                0x0080017e        0x2 ./COTS/MCAL/USART/USART_program .o
+ .bss.USART_u8index
+                0x00800180        0x1 ./COTS/MCAL/USART/USART_program .o
+ .bss.USART_u8ReceivingStringFlag
+                0x00800181        0x1 ./COTS/MCAL/USART/USART_program .o
+ .bss.USART_u8ReceivedStringLength
+                0x00800182        0x1 ./COTS/MCAL/USART/USART_program .o
+ .bss.USART_pfReceivedNotification
+                0x00800183        0x2 ./COTS/MCAL/USART/USART_program .o
+ .bss.USART_pfSendNotification
+                0x00800185        0x2 ./COTS/MCAL/USART/USART_program .o
+ .bss.TIMERS_pfTimer0Overflow
+                0x00800187        0x2 ./COTS/MCAL/TIMERS/TIMERS_program .o
+ .bss.TIMERS_pfTimer0CTC
+                0x00800189        0x2 ./COTS/MCAL/TIMERS/TIMERS_program .o
+ .bss.Local_u16OverflowCounter.1314
+                0x0080018b        0x2 ./COTS/MCAL/TIMERS/TIMERS_program .o
+ .bss.Local_u16CTCCounter.1328
+                0x0080018d        0x2 ./COTS/MCAL/TIMERS/TIMERS_program .o
+ .bss.SPI_u8State
+                0x0080018f        0x1 ./COTS/MCAL/SPI/SPI_program .o
+ .bss.SPI_pu8ReceivedData
+                0x00800190        0x2 ./COTS/MCAL/SPI/SPI_program .o
+ .bss.SPI_pfNotification
+                0x00800192        0x2 ./COTS/MCAL/SPI/SPI_program .o
+ .bss.EXTI_AfPtr
+                0x00800194        0x6 ./COTS/MCAL/EXTI/EXTI_program .o
+ .bss.ADC_pfNotification
+                0x0080019a        0x2 ./COTS/MCAL/ADC/ADC_program .o
+ .bss.Global_u8ReceivedData
+                0x0080019c        0x1 ./COTS/APP/main.o
+ *(COMMON)
+                0x0080019d                PROVIDE (__bss_end, .)
+                0x00007b86                __data_load_start = LOADADDR (.data)
+                0x00007ca0                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0080019d        0x0
+                0x0080019d                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x0080019d                PROVIDE (__noinit_end, .)
+                0x0080019d                _end = .
+                0x0080019d                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x4f20
+ *(.stab)
+ .stab          0x00000000      0x948 ./COTS/MCAL/USART/USART_program .o
+ .stab          0x00000948      0x660 ./COTS/MCAL/TIMERS/TIMERS_program .o
+                                0x66c (size before relaxing)
+ .stab          0x00000fa8      0x48c ./COTS/MCAL/SPI/SPI_program .o
+                                0x498 (size before relaxing)
+ .stab          0x00001434      0x264 ./COTS/MCAL/PORT/PORT_prgram.o
+                                0x270 (size before relaxing)
+ .stab          0x00001698      0x240 ./COTS/MCAL/GIE/GIE_program .o
+                                0x24c (size before relaxing)
+ .stab          0x000018d8      0x780 ./COTS/MCAL/EXTI/EXTI_program .o
+                                0x78c (size before relaxing)
+ .stab          0x00002058      0x654 ./COTS/MCAL/DIO/DIO_program.o
+                                0x660 (size before relaxing)
+ .stab          0x000026ac      0x5e8 ./COTS/MCAL/ADC/ADC_program .o
+                                0x5f4 (size before relaxing)
+ .stab          0x00002c94      0xd50 ./COTS/HAL/STEPPER/STEPPER_program .o
+                                0xd5c (size before relaxing)
+ .stab          0x000039e4      0xc9c ./COTS/HAL/LCD/LCD_program.o
+                                0xe34 (size before relaxing)
+ .stab          0x00004680      0x4ec ./COTS/HAL/KeyPad/KEYPAD_program.o
+                                0x684 (size before relaxing)
+ .stab          0x00004b6c      0x3b4 ./COTS/APP/main.o
+                                0x54c (size before relaxing)
+
+.stabstr        0x00000000     0x1e3d
+ *(.stabstr)
+ .stabstr       0x00000000     0x1e3d ./COTS/MCAL/USART/USART_program .o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x2e0
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashldi3.o)
+ .debug_aranges
+                0x00000020       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .debug_aranges
+                0x00000040       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixsfdi.o)
+ .debug_aranges
+                0x00000060       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfdi.o)
+ .debug_aranges
+                0x00000080       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_floatdisf.o)
+ .debug_aranges
+                0x000000a0       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divdi3.o)
+ .debug_aranges
+                0x000000c0       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_moddi3.o)
+ .debug_aranges
+                0x000000e0       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .debug_aranges
+                0x00000100       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .debug_aranges
+                0x00000120       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+ .debug_aranges
+                0x00000140       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_eq_sf.o)
+ .debug_aranges
+                0x00000160       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ne_sf.o)
+ .debug_aranges
+                0x00000180       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .debug_aranges
+                0x000001a0       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .debug_aranges
+                0x000001c0       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .debug_aranges
+                0x000001e0       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+ .debug_aranges
+                0x00000200       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .debug_aranges
+                0x00000220       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
+ .debug_aranges
+                0x00000240       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashrdi3.o)
+ .debug_aranges
+                0x00000260       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+ .debug_aranges
+                0x00000280       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .debug_aranges
+                0x000002a0       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .debug_aranges
+                0x000002c0       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+
+.debug_pubnames
+                0x00000000      0x333
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashldi3.o)
+ .debug_pubnames
+                0x00000020       0x23 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .debug_pubnames
+                0x00000043       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixsfdi.o)
+ .debug_pubnames
+                0x00000063       0x23 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfdi.o)
+ .debug_pubnames
+                0x00000086       0x22 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_floatdisf.o)
+ .debug_pubnames
+                0x000000a8       0x1f c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divdi3.o)
+ .debug_pubnames
+                0x000000c7       0x1f c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_moddi3.o)
+ .debug_pubnames
+                0x000000e6       0x2c c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .debug_pubnames
+                0x00000112       0x1f c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .debug_pubnames
+                0x00000131       0x1f c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+ .debug_pubnames
+                0x00000150       0x1e c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_eq_sf.o)
+ .debug_pubnames
+                0x0000016e       0x1e c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ne_sf.o)
+ .debug_pubnames
+                0x0000018c       0x1e c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .debug_pubnames
+                0x000001aa       0x1e c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .debug_pubnames
+                0x000001c8       0x1e c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .debug_pubnames
+                0x000001e6       0x22 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+ .debug_pubnames
+                0x00000208       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .debug_pubnames
+                0x00000228       0x22 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .debug_pubnames
+                0x0000024a       0x24 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
+ .debug_pubnames
+                0x0000026e       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashrdi3.o)
+ .debug_pubnames
+                0x0000028e       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
+ .debug_pubnames
+                0x000002ae       0x1f c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+ .debug_pubnames
+                0x000002cd       0x1f c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .debug_pubnames
+                0x000002ec       0x21 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .debug_pubnames
+                0x0000030d       0x26 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+
+.debug_info     0x00000000     0x4013
+ *(.debug_info)
+ .debug_info    0x00000000      0x17f c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashldi3.o)
+ .debug_info    0x0000017f       0xb1 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .debug_info    0x00000230       0xb1 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixsfdi.o)
+ .debug_info    0x000002e1      0x111 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfdi.o)
+ .debug_info    0x000003f2      0x16c c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_floatdisf.o)
+ .debug_info    0x0000055e      0x756 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divdi3.o)
+ .debug_info    0x00000cb4      0x781 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_moddi3.o)
+ .debug_info    0x00001435      0x47a c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .debug_info    0x000018af      0x485 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .debug_info    0x00001d34      0x3fc c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+ .debug_info    0x00002130      0x27f c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_eq_sf.o)
+ .debug_info    0x000023af      0x27f c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ne_sf.o)
+ .debug_info    0x0000262e      0x27f c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .debug_info    0x000028ad      0x27f c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .debug_info    0x00002b2c      0x27f c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .debug_info    0x00002dab      0x207 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+ .debug_info    0x00002fb2      0x2b0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .debug_info    0x00003262      0x12c c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .debug_info    0x0000338e      0x206 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
+ .debug_info    0x00003594      0x17f c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashrdi3.o)
+ .debug_info    0x00003713       0xa9 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
+ .debug_info    0x000037bc      0x117 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+ .debug_info    0x000038d3      0x2df c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .debug_info    0x00003bb2      0x251 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .debug_info    0x00003e03      0x210 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000     0x1e5d
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0xee c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashldi3.o)
+ .debug_abbrev  0x000000ee       0x5d c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .debug_abbrev  0x0000014b       0x5d c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixsfdi.o)
+ .debug_abbrev  0x000001a8       0x9e c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfdi.o)
+ .debug_abbrev  0x00000246       0xc6 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_floatdisf.o)
+ .debug_abbrev  0x0000030c      0x19f c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divdi3.o)
+ .debug_abbrev  0x000004ab      0x19f c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_moddi3.o)
+ .debug_abbrev  0x0000064a      0x1ea c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .debug_abbrev  0x00000834      0x21b c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .debug_abbrev  0x00000a4f      0x216 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+ .debug_abbrev  0x00000c65      0x15a c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_eq_sf.o)
+ .debug_abbrev  0x00000dbf      0x15a c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ne_sf.o)
+ .debug_abbrev  0x00000f19      0x15a c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .debug_abbrev  0x00001073      0x15a c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .debug_abbrev  0x000011cd      0x15a c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .debug_abbrev  0x00001327      0x148 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+ .debug_abbrev  0x0000146f      0x17f c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .debug_abbrev  0x000015ee       0xad c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .debug_abbrev  0x0000169b      0x157 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
+ .debug_abbrev  0x000017f2       0xee c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashrdi3.o)
+ .debug_abbrev  0x000018e0       0x6a c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
+ .debug_abbrev  0x0000194a       0xc4 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+ .debug_abbrev  0x00001a0e      0x1c0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .debug_abbrev  0x00001bce      0x154 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .debug_abbrev  0x00001d22      0x13b c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+
+.debug_line     0x00000000     0x1d9a
+ *(.debug_line)
+ .debug_line    0x00000000       0xd7 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashldi3.o)
+ .debug_line    0x000000d7       0xa7 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .debug_line    0x0000017e       0xa7 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixsfdi.o)
+ .debug_line    0x00000225       0xe7 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfdi.o)
+ .debug_line    0x0000030c      0x105 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_floatdisf.o)
+ .debug_line    0x00000411      0x228 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divdi3.o)
+ .debug_line    0x00000639      0x280 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_moddi3.o)
+ .debug_line    0x000008b9      0x2af c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .debug_line    0x00000b68      0x239 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .debug_line    0x00000da1      0x1d5 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+ .debug_line    0x00000f76       0xd3 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_eq_sf.o)
+ .debug_line    0x00001049       0xd3 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ne_sf.o)
+ .debug_line    0x0000111c       0xd3 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .debug_line    0x000011ef       0xd3 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .debug_line    0x000012c2       0xd3 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .debug_line    0x00001395      0x135 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+ .debug_line    0x000014ca      0x109 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .debug_line    0x000015d3       0x90 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .debug_line    0x00001663      0x133 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
+ .debug_line    0x00001796       0xd7 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashrdi3.o)
+ .debug_line    0x0000186d       0x7c c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
+ .debug_line    0x000018e9       0xa5 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+ .debug_line    0x0000198e      0x18a c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .debug_line    0x00001b18      0x14b c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .debug_line    0x00001c63      0x137 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+
+.debug_frame    0x00000000      0x300
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashldi3.o)
+ .debug_frame   0x00000020       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .debug_frame   0x00000040       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixsfdi.o)
+ .debug_frame   0x00000060       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfdi.o)
+ .debug_frame   0x00000080       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_floatdisf.o)
+ .debug_frame   0x000000a0       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divdi3.o)
+ .debug_frame   0x000000c0       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_moddi3.o)
+ .debug_frame   0x000000e0       0x40 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .debug_frame   0x00000120       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .debug_frame   0x00000140       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+ .debug_frame   0x00000160       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_eq_sf.o)
+ .debug_frame   0x00000180       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ne_sf.o)
+ .debug_frame   0x000001a0       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .debug_frame   0x000001c0       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .debug_frame   0x000001e0       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .debug_frame   0x00000200       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+ .debug_frame   0x00000220       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .debug_frame   0x00000240       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
+ .debug_frame   0x00000260       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashrdi3.o)
+ .debug_frame   0x00000280       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+ .debug_frame   0x000002a0       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .debug_frame   0x000002c0       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .debug_frame   0x000002e0       0x20 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+
+.debug_str      0x00000000      0x3fc
+ *(.debug_str)
+ .debug_str     0x00000000       0xdf c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashldi3.o)
+                                0x131 (size before relaxing)
+ .debug_str     0x000000df       0x14 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+                                 0xfe (size before relaxing)
+ .debug_str     0x000000f3        0xa c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixsfdi.o)
+                                 0xfa (size before relaxing)
+ .debug_str     0x000000fd       0x2c c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfdi.o)
+                                0x11d (size before relaxing)
+ .debug_str     0x00000129       0x29 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_floatdisf.o)
+                                0x12e (size before relaxing)
+ .debug_str     0x00000152       0x5c c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divdi3.o)
+                                0x189 (size before relaxing)
+ .debug_str     0x000001ae        0x9 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_moddi3.o)
+                                0x189 (size before relaxing)
+ .debug_str     0x000001b7      0x14d c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+                                0x206 (size before relaxing)
+ .debug_str     0x00000304       0x27 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+                                0x1bf (size before relaxing)
+ .debug_str     0x0000032b       0x35 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+                                0x1c8 (size before relaxing)
+ .debug_str     0x00000360        0x8 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_eq_sf.o)
+                                0x195 (size before relaxing)
+ .debug_str     0x00000368        0x8 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ne_sf.o)
+                                0x195 (size before relaxing)
+ .debug_str     0x00000370        0x8 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+                                0x195 (size before relaxing)
+ .debug_str     0x00000378        0x8 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+                                0x195 (size before relaxing)
+ .debug_str     0x00000380        0x8 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+                                0x195 (size before relaxing)
+ .debug_str     0x00000388       0x18 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+                                0x17b (size before relaxing)
+ .debug_str     0x000003a0        0xa c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+                                0x19e (size before relaxing)
+ .debug_str     0x00000000      0x103 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .debug_str     0x000003aa       0x14 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
+                                0x177 (size before relaxing)
+ .debug_str     0x000003be        0xa c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashrdi3.o)
+                                0x131 (size before relaxing)
+ .debug_str     0x00000000       0xf4 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clz.o)
+ .debug_str     0x000003c8        0x9 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+                                0x111 (size before relaxing)
+ .debug_str     0x000003d1       0x10 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+                                0x19d (size before relaxing)
+ .debug_str     0x000003e1        0xb c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+                                0x17f (size before relaxing)
+ .debug_str     0x000003ec       0x10 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+                                0x163 (size before relaxing)
+
+.debug_loc      0x00000000     0x2926
+ *(.debug_loc)
+ .debug_loc     0x00000000       0xf8 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashldi3.o)
+ .debug_loc     0x000000f8       0x34 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .debug_loc     0x0000012c       0x4a c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixsfdi.o)
+ .debug_loc     0x00000176       0x94 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfdi.o)
+ .debug_loc     0x0000020a      0x1d4 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_floatdisf.o)
+ .debug_loc     0x000003de      0xe71 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divdi3.o)
+ .debug_loc     0x0000124f      0xb81 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_moddi3.o)
+ .debug_loc     0x00001dd0      0x32a c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .debug_loc     0x000020fa      0x104 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .debug_loc     0x000021fe       0xc0 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_div_sf.o)
+ .debug_loc     0x000022be       0x3c c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_eq_sf.o)
+ .debug_loc     0x000022fa       0x3c c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ne_sf.o)
+ .debug_loc     0x00002336       0x3c c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .debug_loc     0x00002372       0x3c c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .debug_loc     0x000023ae       0x3c c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .debug_loc     0x000023ea       0xac c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_si_to_sf.o)
+ .debug_loc     0x00002496       0x7e c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .debug_loc     0x00002514       0x4c c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_usi_to_sf.o)
+ .debug_loc     0x00002560       0xf8 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ashrdi3.o)
+ .debug_loc     0x00002658       0x94 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clzsi2.o)
+ .debug_loc     0x000026ec      0x13e c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .debug_loc     0x0000282a       0xac c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .debug_loc     0x000028d6       0x50 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(drivers.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000       0x80
+ .debug_ranges  0x00000000       0x18 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divdi3.o)
+ .debug_ranges  0x00000018       0x18 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_moddi3.o)
+ .debug_ranges  0x00000030       0x50 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)

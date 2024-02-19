@@ -20,10 +20,14 @@ C_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+ADC \
 EXTI \
+Full_Calculator \
 Relay \
+SPI \
+TIMERS \
+USART \
 keypad_labs \
 lcd_labs \
 motor_labs \
-. \
 

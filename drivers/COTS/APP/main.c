@@ -8,7 +8,7 @@
 #include "../LIB/BIT_MATH.h"
 #include "../MCAL/DIO/DIO_interface.h"
 #include "../MCAL/PORT/PORT_interface.h"
-#include "../MCAL/USART/USART_interface.h"
+#include "../MCAL/SPI/SPI_interface.h"
 #include "../MCAL/EXTI/EXTI_interface.h"
 #include "../MCAL/GIE/GIE_interface.h"
 #include "../HAL/LCD/LCD_config.h"
@@ -16,33 +16,43 @@
 #include <util/delay.h>
 #include <string.h>
 
-static u8 Local_u8ReceivedData[3];
+static u8 Global_u8ReceivedData = 0;
+void SPI_voidCallBack();
 
-void receivingDataCallBack();
-void sendDataCallBack();
-
+u8 Local_u8Data = 1;
 void main() {
 	PORT_voidInit();
-	USART_voidInit();
+	SPI_VoidMasterInit();
 	GIE_voidEnable();
+	u8 Local_u8ReceivedData[3] ;
+	u8* Local_pu8TransmittedData = "aaa";
 	while (1) {
-			USART_u8ReceiveStringAsync(&Local_u8ReceivedData,3,
-					&receivingDataCallBack);
+		SPI_u8TransceiveStringAsync(Local_pu8TransmittedData, &Local_u8ReceivedData,3 ,
+				SPI_voidCallBack);
+		Local_u8Data = !Local_u8Data;
+		Local_pu8TransmittedData = Local_u8Data ? "bbb" : "aaa";
+		_delay_ms(100);
+
 	}
 }
 
-void receivingDataCallBack() {
+//void main() {
+//	PORT_voidInit();
+//	SPI_VoidSlaveInit();
+//	while (1) {
+//		SPI_VoidTransceiveAsync(2, &Global_u8ReceivedData, SPI_voidCallBack);
+//		_delay_ms(10);
+//	}
+//}
 
-	if (!strcmp(Local_u8ReceivedData , "aaa")) {
+void SPI_voidCallBack() {
+	if (Local_u8Data)
 		DIO_u8SetPinValue(DIO_u8PORTA, DIO_u8PIN0, DIO_u8PIN_HIGH);
-		USART_u8SendDataAsync('o');
-	} else if (!strcmp(Local_u8ReceivedData , "bbb")) {
+	else
 		DIO_u8SetPinValue(DIO_u8PORTA, DIO_u8PIN0, DIO_u8PIN_LOW);
-		USART_u8SendDataAsync('c');
-	}
+//	if (Global_u8ReceivedData == 1)
+//		DIO_u8SetPinValue(DIO_u8PORTA, DIO_u8PIN0, DIO_u8PIN_HIGH);
+//	else if (Global_u8ReceivedData == 0)
+//		DIO_u8SetPinValue(DIO_u8PORTA, DIO_u8PIN0, DIO_u8PIN_LOW);
 }
 
-void sendDataCallBack() {
-	USART_u8SendDataAsync('D');
-
-}

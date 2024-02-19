@@ -10,6 +10,7 @@ RM := rm -rf
 -include sources.mk
 -include COTS/MCAL/USART/subdir.mk
 -include COTS/MCAL/TIMERS/subdir.mk
+-include COTS/MCAL/SPI/subdir.mk
 -include COTS/MCAL/PORT/subdir.mk
 -include COTS/MCAL/GIE/subdir.mk
 -include COTS/MCAL/EXTI/subdir.mk

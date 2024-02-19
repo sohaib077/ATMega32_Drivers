@@ -1,0 +1,183 @@
+//
+// Created by sohai on 2/17/2024.
+//
+
+/****************************************************/
+/**************** Name : Sohaib     *****************/
+/**************** Date : 2/17/2024 *****************/
+/**************** SWC  : SPI     *****************/
+/**************** Version : 1.0     *****************/
+/****************************************************/
+
+#include "../../LIB/STD_TYPES.h"
+#include "../../LIB/BIT_MATH.h"
+
+#include "SPI_config.h"
+#include "SPI_private.h"
+#include "SPI_interface.h"
+#include "SPI_register.h"
+
+
+static u8 SPI_u8State = IDLE;
+static u8 *SPI_pu8ReceivedData = NULL;
+
+static void (*SPI_pfNotification)(void) = NULL;
+
+
+void SPI_VoidMasterInit(void) {
+
+/* Data order */
+#if SPI_DATA_ORDER == MSB_TRANSMITTED_FIRST
+    CLR_BIT(SPCR, SPCR_DORD);
+#elif SPI_DATA_ORDER == LSB_TRANSMITTED_FIRST
+    SET_BIT(SPCR, SPCR_DORD);
+#else
+#error "Wrong SPI_DATA_ORDER config"
+#endif
+
+/* Clock polarity */
+#if SPI_CLK_POLARITY == POLARITY_RISING_LEADING
+    CLR_BIT(SPCR, SPCR_CPOL);
+#elif SPI_CLK_POLARITY == POLARITY_FALLING_LEADING
+    SET_BIT(SPCR, SPCR_CPOL);
+#else
+#error "Wrong SPI_CLK_POLARITY config"
+#endif
+
+/* Clock phase */
+#if SPI_CLK_PHASE == PHASE_SAMPLE_LEADING
+    CLR_BIT(SPCR, SPCR_CPHA);
+#elif SPI_CLK_PHASE == PHASE_SETUP_LEADING
+    SET_BIT(SPCR, SPCR_CPHA);
+#else
+#error "Wrong SPI_CLK_PHASE config"
+#endif
+
+/* Clock rate */
+#if SPI_CLK_RATE == FREQUENCY_DIVIDED_BY_2
+    CLR_BIT(SPCR, SPCR_SPR0);
+    CLR_BIT(SPCR, SPCR_SPR1);
+    SET_BIT(SPSR, SPCR_SPI2X);
+#elif SPI_CLK_RATE == FREQUENCY_DIVIDED_BY_4
+    CLR_BIT(SPCR, SPCR_SPR0);
+    CLR_BIT(SPCR, SPCR_SPR1);
+    CLR_BIT(SPSR, SPCR_SPI2X);
+#elif SPI_CLK_RATE == FREQUENCY_DIVIDED_BY_8
+    SET_BIT(SPCR, SPCR_SPR0);
+    CLR_BIT(SPCR, SPCR_SPR1);
+    SET_BIT(SPSR, SPCR_SPI2X);
+#elif SPI_CLK_RATE == FREQUENCY_DIVIDED_BY_16
+    SET_BIT(SPCR, SPCR_SPR0);
+    CLR_BIT(SPCR, SPCR_SPR1);
+    CLR_BIT(SPSR, SPSR_SPI2X);
+#elif SPI_CLK_RATE == FREQUENCY_DIVIDED_BY_32
+    CLR_BIT(SPCR, SPCR_SPR0);
+    SET_BIT(SPCR, SPCR_SPR1);
+    SET_BIT(SPSR, SPCR_SPI2X);
+#elif SPI_CLK_RATE == FREQUENCY_DIVIDED_BY_64
+    CLR_BIT(SPCR, SPCR_SPR0);
+    SET_BIT(SPCR, SPCR_SPR1);
+    CLR_BIT(SPSR, SPCR_SPI2X);
+#elif SPI_CLK_RATE == FREQUENCY_DIVIDED_BY_128
+    SET_BIT(SPCR, SPCR_SPR0);
+    SET_BIT(SPCR, SPCR_SPR1);
+    CLR_BIT(SPSR, SPCR_SPI2X);
+#else
+#error "Wrong SPI_CLK_RATE config"
+#endif
+
+    /* Config as master */
+    SET_BIT(SPCR, SPCR_MSTR);
+
+    /* Enable SPI */
+    SET_BIT(SPCR, SPCR_SPE);
+}
+
+
+void SPI_VoidSlaveInit(void) {
+
+/* Data order */
+#if SPI_DATA_ORDER == MSB_TRANSMITTED_FIRST
+    CLR_BIT(SPCR, SPCR_DORD);
+#elif SPI_DATA_ORDER == LSB_TRANSMITTED_FIRST
+    SET_BIT(SPCR, SPCR_DORD);
+#else
+#error "Wrong SPI_DATA_ORDER config"
+#endif
+
+/* Clock polarity */
+#if SPI_CLK_POLARITY == POLARITY_RISING_LEADING
+    CLR_BIT(SPCR, SPCR_CPOL);
+#elif SPI_CLK_POLARITY == POLARITY_FALLING_LEADING
+    SET_BIT(SPCR, SPCR_CPOL);
+#else
+#error "Wrong SPI_CLK_POLARITY config"
+#endif
+
+/* Clock phase */
+#if SPI_CLK_PHASE == PHASE_SAMPLE_LEADING
+    CLR_BIT(SPCR, SPCR_CPHA);
+#elif SPI_CLK_PHASE == PHASE_SETUP_LEADING
+    SET_BIT(SPCR, SPCR_CPHA);
+#else
+#error "Wrong SPI_CLK_PHASE config"
+#endif
+
+    /* Config as slave */
+    CLR_BIT(SPCR, SPCR_MSTR);
+
+    /* Enable SPI */
+    SET_BIT(SPCR, SPCR_SPE);
+}
+
+u8 SPI_VoidTransceiveSync(u8 Copy_u8Data, u8 *Copy_pu8ReceivedData) {
+    if (Copy_pu8ReceivedData == NULL) return NULL_POINTER;
+
+    /* Start transmission */
+    SPDR = Copy_u8Data;
+
+    u32 Local_u32TimeOutCounter = SPI_u32TIMEOUT;
+
+    /* Busy waiting for the data transfer to complete */
+    while (!GET_BIT(SPSR, SPSR_SPIF) && Local_u32TimeOutCounter--);
+
+    if (!Local_u32TimeOutCounter) return TIMEOUT_STATE;
+
+    /* Assign the received data */
+    *Copy_pu8ReceivedData = SPDR;
+
+    return OK;
+}
+
+u8 SPI_VoidTransceiveAsync(u8 Copy_u8Data, u8 *Copy_pu8ReceivedData, void(*Copy_pfNotification)(void)) {
+
+//    if (Copy_pu8ReceivedData == NULL || Copy_pfNotification == NULL) return NULL_POINTER;
+//    if (SPI_u8State == BUSY) return BUSY_STATE;
+//
+//    SPI_u8State = BUSY;
+    SPI_pfNotification = Copy_pfNotification;
+    SPI_pu8ReceivedData = Copy_pu8ReceivedData;
+
+    /* Start transmission */
+    SPDR = Copy_u8Data;
+
+    /* Enable SPI interrupt */
+    SET_BIT(SPCR, SPCR_SPIE);
+
+    return OK;
+}
+
+
+void __vector_12(void)        __attribute__ ((signal));
+
+void __vector_12(void) {
+
+    *SPI_pu8ReceivedData = SPDR;
+
+    /* Disable SPI interrupt */
+    CLR_BIT(SPCR, SPCR_SPIE);
+
+    SPI_u8State = IDLE;
+    
+    SPI_pfNotification();
+}
