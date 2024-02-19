@@ -37,7 +37,11 @@ void main() {
 }
 
 
-void SPI_voidCallBack() {}
+void SPI_voidCallBack() {
+	if (!strcmp(Global_u8ReceivedData , "ccc"))
+		DIO_u8SetPinValue(DIO_u8PORTA, DIO_u8PIN0, DIO_u8PIN_HIGH);
+
+}
 
 
 

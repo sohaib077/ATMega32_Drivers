@@ -1,21 +1,11 @@
-02:54:26 **** Incremental Build of configuration Debug for project drivers ****
+03:23:38 **** Incremental Build of configuration Debug for project drivers ****
 make all 
-Building file: ../COTS/MCAL/SPI/SPI_program .c
-Invoking: AVR Compiler
-avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"COTS/MCAL/SPI/SPI_program .d" -MT"COTS/MCAL/SPI/SPI_program\ .d" -c -o "COTS/MCAL/SPI/SPI_program .o" "../COTS/MCAL/SPI/SPI_program .c"
-Finished building: ../COTS/MCAL/SPI/SPI_program .c
- 
 Building file: ../COTS/APP/main.c
 Invoking: AVR Compiler
 avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"COTS/APP/main.d" -MT"COTS/APP/main.o" -c -o "COTS/APP/main.o" "../COTS/APP/main.c"
 In file included from ../COTS/APP/main.c:16:
 c:/sohaib/embedded/01- imt sdk-20230714t110022z-001/01- imt sdk/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
 ../COTS/APP/main.c:23: warning: return type of 'main' is not 'int'
-../COTS/APP/main.c: In function 'main':
-../COTS/APP/main.c:28: warning: pointer targets in initialization differ in signedness
-../COTS/APP/main.c:31: warning: passing argument 2 of 'SPI_u8TransceiveStringAsync' from incompatible pointer type
-../COTS/APP/main.c:33: warning: pointer targets in assignment differ in signedness
-../COTS/APP/main.c: At top level:
 ../COTS/APP/main.c:19: warning: 'Global_u8ReceivedData' defined but not used
 Finished building: ../COTS/APP/main.c
  
@@ -38,15 +28,15 @@ AVR Memory Usage
 ----------------
 Device: atmega32
 
-Program:   32326 bytes (98.7% Full)
+Program:   32186 bytes (98.2% Full)
 (.text + .data + .bootloader)
 
-Data:        329 bytes (16.1% Full)
+Data:        321 bytes (15.7% Full)
 (.data + .bss + .noinit)
 
 
 Finished building: sizedummy
  
 
-02:54:27 Build Finished (took 966ms)
+03:23:39 Build Finished (took 841ms)
 

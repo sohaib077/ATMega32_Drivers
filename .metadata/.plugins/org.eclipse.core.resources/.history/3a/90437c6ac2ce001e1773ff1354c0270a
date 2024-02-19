@@ -36,9 +36,23 @@ void main() {
 	}
 }
 
+//void main() {
+//	PORT_voidInit();
+//	SPI_VoidSlaveInit();
+//	while (1) {
+//		SPI_VoidTransceiveAsync(2, &Global_u8ReceivedData, SPI_voidCallBack);
+//		_delay_ms(10);
+//	}
+//}
 
-void SPI_voidCallBack() {}
-
-
-
+void SPI_voidCallBack() {
+	if (Local_u8Data)
+		DIO_u8SetPinValue(DIO_u8PORTA, DIO_u8PIN0, DIO_u8PIN_HIGH);
+	else
+		DIO_u8SetPinValue(DIO_u8PORTA, DIO_u8PIN0, DIO_u8PIN_LOW);
+//	if (Global_u8ReceivedData == 1)
+//		DIO_u8SetPinValue(DIO_u8PORTA, DIO_u8PIN0, DIO_u8PIN_HIGH);
+//	else if (Global_u8ReceivedData == 0)
+//		DIO_u8SetPinValue(DIO_u8PORTA, DIO_u8PIN0, DIO_u8PIN_LOW);
+}
 

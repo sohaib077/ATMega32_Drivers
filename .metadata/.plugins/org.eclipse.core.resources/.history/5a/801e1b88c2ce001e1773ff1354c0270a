@@ -16,23 +16,44 @@
 #include <util/delay.h>
 #include <string.h>
 
+static u8 Global_u8ReceivedData = 0;
+void SPI_voidCallBack();
+
+u8 Local_u8Data = 1;
+void main() {
+	PORT_voidInit();
+	SPI_VoidMasterInit();
+	GIE_voidEnable();
+	u8 Local_u8ReceivedData[3] ;
+	u8* Local_pu8TransmittedData = "aaa";
+	while (1) {
+		SPI_u8TransceiveStringAsync(Local_pu8TransmittedData, &Local_u8ReceivedData,3 ,
+				SPI_voidCallBack);
+		Local_u8Data = !Local_u8Data;
+		Local_pu8TransmittedData = Local_u8Data ? "bbb" : "aaa";
+		_delay_ms(100);
+
+	}
+}
+
+
+void SPI_voidCallBack() {}
+
+//------------------------------------------ SLAVE ----------------------------//
+
+
 static u8 Global_u8ReceivedData[3];
 void SPI_voidCallBack();
 
 void main() {
 	PORT_voidInit();
 	SPI_VoidSlaveInit();
-	u8 Local_u8ReceivedData = 0;
+	GIE_voidEnable();
 	while (1) {
-		SPI_u8TransceiveSync(2, &Local_u8ReceivedData);
-		if (Local_u8ReceivedData == 1)
-			DIO_u8SetPinValue(DIO_u8PORTA, DIO_u8PIN0, DIO_u8PIN_HIGH);
-		else if (Local_u8ReceivedData == 0)
-			DIO_u8SetPinValue(DIO_u8PORTA, DIO_u8PIN0, DIO_u8PIN_LOW);
-		_delay_ms(10);
+		SPI_u8TransceiveStringAsync("ccc", &Global_u8ReceivedData, 3 ,SPI_voidCallBack);
+		_delay_ms(100);
 	}
 }
-
 
 void SPI_voidCallBack() {
 	DIO_u8SetPinValue(DIO_u8PORTD, DIO_u8PIN0, DIO_u8PIN_HIGH);
@@ -44,4 +65,6 @@ void SPI_voidCallBack() {
 	else if (!strcmp(Global_u8ReceivedData , "bbb"))
 		DIO_u8SetPinValue(DIO_u8PORTA, DIO_u8PIN0, DIO_u8PIN_LOW);
 }
+
+
 

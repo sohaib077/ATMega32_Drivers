@@ -24,7 +24,7 @@ void main() {
 	SPI_VoidSlaveInit();
 	u8 Local_u8ReceivedData = 0;
 	while (1) {
-		SPI_u8TransceiveSync(2, &Local_u8ReceivedData);
+		SPI_VoidTransceiveSync(2, &Local_u8ReceivedData);
 		if (Local_u8ReceivedData == 1)
 			DIO_u8SetPinValue(DIO_u8PORTA, DIO_u8PIN0, DIO_u8PIN_HIGH);
 		else if (Local_u8ReceivedData == 0)

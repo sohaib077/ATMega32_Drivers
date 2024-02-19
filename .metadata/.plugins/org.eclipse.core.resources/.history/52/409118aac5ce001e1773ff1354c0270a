@@ -23,16 +23,12 @@ u8 Local_u8Data = 1;
 void main() {
 	PORT_voidInit();
 	SPI_VoidMasterInit();
-	GIE_voidEnable();
-	u8 Local_u8ReceivedData[3] ;
-	u8* Local_pu8TransmittedData = "aaa";
+	u8 Local_u8ReceivedData = 0;
+	u8 Local_u8Data = 1;
 	while (1) {
-		SPI_u8TransceiveStringAsync(Local_pu8TransmittedData, &Local_u8ReceivedData,3 ,
-				SPI_voidCallBack);
-		Local_u8Data = !Local_u8Data;
-		Local_pu8TransmittedData = Local_u8Data ? "bbb" : "aaa";
-		_delay_ms(100);
-
+		SPI_u8TransceiveSync(Local_u8Data, &Local_u8ReceivedData);
+		_delay_ms(1000);
+		Local_u8Data = ! Local_u8Data;
 	}
 }
 

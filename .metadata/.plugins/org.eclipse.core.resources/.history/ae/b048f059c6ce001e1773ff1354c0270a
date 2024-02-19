@@ -164,8 +164,6 @@ u8 SPI_u8TransceiveAsync(u8 Copy_u8Data, u8 *Copy_pu8ReceivedData,
     SPI_u8State = BUSY;
     SPI_pfNotification = Copy_pfNotification;
     SPI_pu8ReceivedData = Copy_pu8ReceivedData;
-
-    /* It's only one character */
     SPI_u8StringLength = 1;
     SPI_u8StringIndex = 0;
 
@@ -174,6 +172,7 @@ u8 SPI_u8TransceiveAsync(u8 Copy_u8Data, u8 *Copy_pu8ReceivedData,
 
     /* Start transmission */
     SPDR = Copy_u8Data;
+
     return OK;
 }
 
@@ -207,13 +206,10 @@ void __vector_12(void) __attribute__ ((signal));
 
 void __vector_12(void) {
 
-    *SPI_pu8ReceivedData = SPDR;  /* Copy Received Data */
-
-    SPI_pu8ReceivedData++;       /* Point to the next location */
-
+    *SPI_pu8ReceivedData = SPDR;
+    SPI_pu8ReceivedData++;
     SPI_u8StringIndex++;
 
-    /* Checking if it's the last transfer */
     if (SPI_u8StringLength == SPI_u8StringIndex) {
 
         *SPI_pu8ReceivedData = '\0';
@@ -226,7 +222,6 @@ void __vector_12(void) {
         SPI_pfNotification();
 
     } else {
-        /* Starting the next transfer */
         SPDR = SPI_pu8TransmittedData[SPI_u8StringIndex];
     }
 }

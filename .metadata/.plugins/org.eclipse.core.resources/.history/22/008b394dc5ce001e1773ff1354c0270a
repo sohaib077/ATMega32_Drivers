@@ -18,13 +18,13 @@
 
 static u8 Global_u8ReceivedData = 0;
 void SPI_voidCallBack();
+u8 Local_u8ReceivedData[3] ;
 
 u8 Local_u8Data = 1;
 void main() {
 	PORT_voidInit();
 	SPI_VoidMasterInit();
 	GIE_voidEnable();
-	u8 Local_u8ReceivedData[3] ;
 	u8* Local_pu8TransmittedData = "aaa";
 	while (1) {
 		SPI_u8TransceiveStringAsync(Local_pu8TransmittedData, &Local_u8ReceivedData,3 ,
@@ -37,7 +37,11 @@ void main() {
 }
 
 
-void SPI_voidCallBack() {}
+void SPI_voidCallBack() {
+	if (!strcmp(Local_u8ReceivedData , "ccc"))
+		DIO_u8SetPinValue(DIO_u8PORTD, DIO_u8PIN1, DIO_u8PIN_HIGH);
+
+}
 
 
 

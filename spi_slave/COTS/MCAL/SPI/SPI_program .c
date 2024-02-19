@@ -151,6 +151,8 @@ u8 SPI_u8TransceiveSync(u8 Copy_u8Data, u8 *Copy_pu8ReceivedData) {
     return OK;
 }
 
+//---------------------------------------------------------------------
+
 u8 SPI_u8TransceiveAsync(u8 Copy_u8Data, u8 *Copy_pu8ReceivedData,
                          void (*Copy_pfNotification)(void)) {
 
@@ -163,14 +165,19 @@ u8 SPI_u8TransceiveAsync(u8 Copy_u8Data, u8 *Copy_pu8ReceivedData,
     SPI_pfNotification = Copy_pfNotification;
     SPI_pu8ReceivedData = Copy_pu8ReceivedData;
 
+    /* It's only one character */
+    SPI_u8StringLength = 1;
+    SPI_u8StringIndex = 0;
+
     /* Enable SPI interrupt */
     SET_BIT(SPCR, SPCR_SPIE);
 
     /* Start transmission */
     SPDR = Copy_u8Data;
-
     return OK;
 }
+
+//---------------------------------------------------------------------
 
 u8 SPI_u8TransceiveStringAsync(u8 *Copy_u8Data, u8 *Copy_pu8ReceivedData,
                                u8 Copy_u8StringLength, void (*Copy_pfNotification)(void)) {
@@ -200,9 +207,16 @@ void __vector_12(void) __attribute__ ((signal));
 
 void __vector_12(void) {
 
-    if (SPI_u8StringLength == 0) {
+    *SPI_pu8ReceivedData = SPDR;  /* Copy Received Data */
 
-        *SPI_pu8ReceivedData = SPDR;
+    SPI_pu8ReceivedData++;       /* Point to the next location */
+
+    SPI_u8StringIndex++;
+
+    /* Checking if it's the last transfer */
+    if (SPI_u8StringLength == SPI_u8StringIndex) {
+
+        *SPI_pu8ReceivedData = '\0';
 
         /* Disable SPI interrupt */
         CLR_BIT(SPCR, SPCR_SPIE);
@@ -210,28 +224,9 @@ void __vector_12(void) {
         SPI_u8State = IDLE;
 
         SPI_pfNotification();
+
     } else {
-
-        *SPI_pu8ReceivedData = SPDR;
-        SPI_pu8ReceivedData++;
-        SPI_u8StringIndex++;
-
-        if (SPI_u8StringIndex == SPI_u8StringLength) {
-
-            *SPI_pu8ReceivedData = '\0';
-
-            SPI_u8StringLength = 0;
-
-            SPI_u8State = IDLE;
-
-            /* Disable SPI interrupt */
-            CLR_BIT(SPCR, SPCR_SPIE);
-
-            SPI_pfNotification();
-
-        } else {
-            SPDR = SPI_pu8TransmittedData[SPI_u8StringIndex];
-        }
-
+        /* Starting the next transfer */
+        SPDR = SPI_pu8TransmittedData[SPI_u8StringIndex];
     }
 }
