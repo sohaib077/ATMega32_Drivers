@@ -6,12 +6,13 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="DecToBin" key="selection"/>
+		<item value="SPI_u8TransceiveSync" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="SPI_VoidTransceiveSync"/>
 			<item value="DecToBin"/>
 			<item value="Calculator"/>
 			<item value="Local_u8ModeFlag"/>
@@ -20,6 +21,7 @@
 			<item value="&#x09;&#x09;x = (Copy_u8Direction == DIO_u8PIN_OUTPUT) ?"/>
 		</list>
 		<list key="replacehistory">
+			<item value="SPI_u8TransceiveSync"/>
 			<item value="DecToBinCalculator"/>
 			<item value="NormalCalculator"/>
 			<item value="Global_u8ModeFlag"/>
