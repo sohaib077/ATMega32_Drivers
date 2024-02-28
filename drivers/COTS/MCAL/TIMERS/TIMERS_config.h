@@ -33,6 +33,7 @@
 /***********************	T I M E R 1		*****************************/
 /************************************************************************/
 
+#define TIMER1_CLOCK  TIMERS_8_PRESCALER_CLOCK
 
 #define TIMER1_MODE         TIMER1_CTC_OCR1A_MODE
 
@@ -58,7 +59,29 @@
 
 
 
-#define TIMER1_CLOCK  TIMERS_8_PRESCALER_CLOCK
+
+/************************************************************************/
+/***********************	T I M E R 2		*****************************/
+/************************************************************************/
+
+#define TIMER2_CLOCK        TIMER2_8_PRESCALER_CLOCK
+
+/* Use Timer0 options */
+#define TIMER2_MODE         TIMER0_NORMAL_MODE
+
+/* Use Timer0 options */
+#define TIMER2_NON_PWM_COMPARE_OUT_MODE              TIMER0_NON_PWM_COMPARE_OUT_NORMAL_MODE
+
+/* Use Timer0 options */
+#define TIMER2_FAST_PWM_COMPARE_OUT_MODE             TIMER0_FAST_PWM_COMPARE_OUT_NON_INVERTING_MODE
+
+/* Use Timer0 options */
+#define TIMER2_PHASE_CORRECT_PWM_COMPARE_OUT_MODE    TIMER0_PHASE_CORRECT_PWM_COMPARE_OUT_INVERTING_MODE
+
+#define TIMER2_PRELOAD_VALUE               192
+#define TIMER2_OVERFLOW_COUNT              10000
+#define TIMER2_CTC_COUNT                   99
+#define TIMER2_COMPARE_MATCH_VALUE         64
 
 
 #endif //TIMERS_CONFIG_H

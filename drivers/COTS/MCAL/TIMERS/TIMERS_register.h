@@ -81,10 +81,31 @@
 #define ICR1  *((volatile pu16) 0x46)   /*  Input Capture Register */
 
 
-#define TIMSK_TICIE1     5              /* Timer/Counter1, Input Capture Interrupt Enable */
-#define TIMSK_OCIE1A     4              /* Timer/Counter1, Output Compare A Match Interrupt Enable */
-#define TIMSK_OCIE1B     3              /* Timer/Counter1, Output Compare B Match Interrupt Enable */
 #define TIMSK_TOIE1      2              /* Timer/Counter1, Overflow Interrupt Enable */
+#define TIMSK_OCIE1B     3              /* Timer/Counter1, Output Compare B Match Interrupt Enable */
+#define TIMSK_OCIE1A     4              /* Timer/Counter1, Output Compare A Match Interrupt Enable */
+#define TIMSK_TICIE1     5              /* Timer/Counter1, Input Capture Interrupt Enable */
 
+
+/************************************************************************/
+/***********************	T I M E R 2		*****************************/
+/************************************************************************/
+
+#define TCCR2 *((volatile pu8) 0x45)  /* Timer/Counter Control Register  */
+#define TCCR2_CS20       0            /* Clock Select */
+#define TCCR2_CS21       1
+#define TCCR2_CS22       2            /* Force Output Compare for Channel B */
+#define TCCR2_WGM21      3            /* Waveform Generation Mode */
+#define TCCR2_COM20      4            /* Compare Output Mode */
+#define TCCR2_COM21      5            /* Compare Output Mode */
+#define TCCR2_WGM20      6            /* Waveform Generation Mode */
+#define TCCR2_FOC2       7            /* Force Output Compare */
+
+#define TCNT2 *((volatile pu16) 0x44)  /* Counter Register */
+
+#define OCR2  *((volatile pu16) 0x43)  /* Output Compare Register */
+
+#define TIMSK_TOIE2      6              /* Timer/Counter2, Overflow Interrupt Enable */
+#define TIMSK_OCIE2      7              /* Timer/Counter2, Output Compare Match Interrupt Enable */
 
 #endif //TIMERS_REGISTER_H

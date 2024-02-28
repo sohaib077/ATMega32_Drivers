@@ -501,15 +501,156 @@ u8 TIMER1_voidChangeICR1InterruptState(INTERRUPT_STATE enum_CopyState) {
 }
 
 
+/************************************************************************/
+/***********************	T I M E R 2		*****************************/
+/************************************************************************/
+
+
+void TIMER2_voidInit() {
+    /* Mode */
+#if TIMER2_MODE == TIMER0_NORMAL_MODE
+    CLR_BIT(TCCR2, TCCR2_WGM20);
+    CLR_BIT(TCCR2, TCCR2_WGM21);
+
+    /* Preload value */
+    TCNT2 = TIMER2_PRELOAD_VALUE;
+
+    /* Enable overflow Interrupt */
+    SET_BIT(TIMSK, TIMSK_TOIE2);
+
+
+#elif TIMER2_MODE == TIMER0_CTC_MODE
+    CLR_BIT(TCCR2, TCCR2_WGM20);
+    SET_BIT(TCCR2, TCCR2_WGM21);
+
+    /* Set compare match value */
+    OCR2 = TIMER2_CTC_COUNT;
+
+    /* Enable Output Compare Match Interrupt */
+    SET_BIT(TIMSK, TIMSK_OCIE2);
+
+#elif TIMER2_MODE == TIMER0_PHASE_CORRECT_PWM_MODE
+    SET_BIT(TCCR2 , TCCR2_WGM20);
+    CLR_BIT(TCCR2 , TCCR2_WGM21);
+
+    /*  Compare Output Mode */
+    #if TIMER2_PHASE_CORRECT_PWM_COMPARE_OUT_MODE ==  TIMER0_PHASE_CORRECT_PWM_COMPARE_OUT_NORMAL_MODE
+            CLR_BIT(TCCR2 , TCCR2_COM20);
+            CLR_BIT(TCCR2 , TCCR2_COM21);
+
+    #elif TIMER2_PHASE_CORRECT_PWM_COMPARE_OUT_MODE ==  TIMER0_PHASE_CORRECT_PWM_COMPARE_OUT_INVERTING_MODE
+            CLR_BIT(TCCR2 , TCCR2_COM20);
+            SET_BIT(TCCR2 , TCCR2_COM21);
+
+    #elif TIMER2_PHASE_CORRECT_PWM_COMPARE_OUT_MODE ==  TIMER0_PHASE_CORRECT_PWM_COMPARE_OUT_NON_INVERTING_MODE
+            SET_BIT(TCCR2 , TCCR2_COM20);
+            SET_BIT(TCCR2 , TCCR2_COM21);
+    #else
+        #error " Wrong TIMER2_PHASE_CORRECT_PWM_MODE Compare Output Mode "
+    #endif
+
+    /* Set compare match value */
+    OCR2 = TIMER2_COMPARE_MATCH_VALUE;
+
+    /* Enable overflow Interrupt */
+    SET_BIT(TIMSK, TIMSK_TOIE2);
+
+
+#elif TIMER2_MODE == TIMER0_FAST_PWM_MODE
+    SET_BIT(TCCR2, TCCR2_WGM20);
+    SET_BIT(TCCR2, TCCR2_WGM21);
+
+
+    /*  Compare Output Mode */
+    #if TIMER2_FAST_PWM_COMPARE_OUT_MODE == TIMER0_PHASE_CORRECT_PWM_COMPARE_OUT_NORMAL_MODE
+        CLR_BIT(TCCR2 , TCCR2_COM20);
+        CLR_BIT(TCCR2 , TCCR2_COM21);
+
+    #elif TIMER2_FAST_PWM_COMPARE_OUT_MODE == TIMER0_FAST_PWM_COMPARE_OUT_NON_INVERTING_MODE
+        CLR_BIT(TCCR2, TCCR2_COM20);
+        SET_BIT(TCCR2, TCCR2_COM21);
+
+    #elif TIMER2_FAST_PWM_COMPARE_OUT_MODE == TIMER0_FAST_PWM_COMPARE_OUT_INVERTING_MODE
+        SET_BIT(TCCR2 , TCCR2_COM20);
+        SET_BIT(TCCR2 , TCCR2_COM21);
+
+    #else
+        #error " Wrong TIMER2_FAST_PWM_MODE Compare Output Mode "
+    #endif
+
+    /* Set compare match value */
+    OCR2 = TIMER2_COMPARE_MATCH_VALUE;
+
+    /* Enable overflow Interrupt */
+    SET_BIT(TIMSK, TIMSK_TOIE2);
+
+#else
+    #error " Wrong TIMER2_MODE config "
+#endif
+
+
+/* Select hardware action on OC2 pin when compare match in non PWM mode */
+#if TIMER0_MODE == TIMER0_NORMAL_MODE || TIMER0_MODE == TIMER0_CTC_MODE
+
+    #if TIMER0_NON_PWM_COMPARE_OUT_MODE == TIMER0_NON_PWM_COMPARE_OUT_NORMAL_MODE
+        CLR_BIT(TCCR2, TCCR2_COM20);
+        CLR_BIT(TCCR2, TCCR2_COM21);
+
+    #elif TIMER0_NON_PWM_COMPARE_OUT_MODE == TIMER0_NON_PWM_COMPARE_OUT_TOGGLE_MODE
+        SET_BIT(TCCR2, TCCR2_COM20);
+        CLR_BIT(TCCR2, TCCR2_COM21);
+
+    #elif TIMER0_NON_PWM_COMPARE_OUT_MODE == TIMER0_NON_PWM_COMPARE_OUT_CLR_MODE
+        CLR_BIT(TCCR2, TCCR2_COM20);
+        SET_BIT(TCCR2, TCCR2_COM21);
+
+    #elif TIMER0_NON_PWM_COMPARE_OUT_MODE == TIMER0_NON_PWM_COMPARE_OUT_SET_MODE
+        SET_BIT(TCCR2, TCCR2_COM20);
+        SET_BIT(TCCR2, TCCR2_COM21);
+    #else
+        #error " Wrong TIMER2_NON_PWM_MODE Compare Output Mode"
+    #endif
+
+#endif
+
+    /* Prescaler Clock */
+    TCCR2 &= 0b11111000;
+    TCCR2 |= TIMER0_CLOCK;
+}
 
 
 
+void TIMER2_voidSetCompareMatch(u8 Copy_u8OCR2Value) {
+    OCR2 = Copy_u8OCR2Value;
+}
+
+void TIMER2_voidSetPreload(u8 Copy_u8PreloadValue) {
+    TCNT2 = Copy_u8PreloadValue;
+}
+
+u8 TIMER2_u8ReadTimer() {
+    return TCNT2;
+}
+
+u8 TIMER2_voidChangeOutCompareMatchInterruptState(INTERRUPT_STATE enum_CopyState) {
+    if (enum_CopyState == DISABLE) CLR_BIT(TIMSK, TIMSK_OCIE2);
+    else if (enum_CopyState == ENABLE) SET_BIT(TIMSK, TIMSK_OCIE2);
+    else return NOT_OK;
+    return OK;
+}
+
+u8 TIMER2_voidChangeOverFlowInterruptState(INTERRUPT_STATE enum_CopyState) {
+    if (enum_CopyState == DISABLE) CLR_BIT(TIMSK, TIMSK_TOIE2);
+    else if (enum_CopyState == ENABLE) SET_BIT(TIMSK, TIMSK_TOIE2);
+    else return NOT_OK;
+    return OK;
+}
 
 
 
-
-
-
+/************************************************************************/
+/***********************	 I S R s		*****************************/
+/************************************************************************/
 
 void __vector_11() __attribute__((signal));
 
