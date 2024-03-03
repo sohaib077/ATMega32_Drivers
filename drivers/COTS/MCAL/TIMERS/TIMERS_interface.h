@@ -66,11 +66,6 @@ u8 TIMER0_voidChangeOutCompareMatchInterruptState(INTERRUPT_STATE enum_CopyState
 
 u8 TIMER0_voidChangeOverFlowInterruptState(INTERRUPT_STATE enum_CopyState);
 
-u8 TIMER0_u8SetCallBack(void (*Copy_pf)(void));
-
-u8 TIMER0_u8CTCSetCallBack(void (*Copy_pf)(void));
-
-
 /************************************************************************/
 /***********************	T I M E R 1		*****************************/
 /************************************************************************/
@@ -173,7 +168,6 @@ u8 TIMER1_voidChangeICR1InterruptState(INTERRUPT_STATE enum_CopyState);
 //#define TIMER2_PHASE_CORRECT_PWM_COMPARE_OUT_INVERTING_MODE        2  /* Clear OC2 on compare match when up-counting */
 //#define TIMER2_PHASE_CORRECT_PWM_COMPARE_OUT_NON_INVERTING_MODE    3  /* Set OC2 on compare match when up-counting */
 
-
 void Timer2_voidInit();
 
 void TIMER2_voidSetCompareMatch(u8 Copy_u8OCR0Value);
@@ -186,5 +180,23 @@ u8 TIMER2_voidChangeOutCompareMatchInterruptState(INTERRUPT_STATE enum_CopyState
 
 u8 TIMER2_voidChangeOverFlowInterruptState(INTERRUPT_STATE enum_CopyState);
 
+
+/************************************************************************/
+/***********************    CALLBACK IDs	*****************************/
+/************************************************************************/
+
+#define TIMER0_OVF_INDEX       0
+#define TIMER0_COMP_INDEX      1
+
+#define TIMER1_OVF_INDEX       2
+#define TIMER1_COMPA_INDEX     3
+#define TIMER1_COMPB_INDEX     4
+#define TIMER1_CAPT_INDEX      5
+
+#define TIMER2_OVF_INDEX       6
+#define TIMER2_COMP_INDEX      7    /* Last Index */
+
+
+u8 TIMERS_u8SetCallBack(void (*Copy_pf)(void), u8 Copy_Index);
 
 #endif //TIMERS_INTERFACE_H

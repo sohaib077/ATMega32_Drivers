@@ -17,9 +17,8 @@
 #include "TIMERS_interface.h"
 #include "TIMERS_register.h"
 
-static void (*TIMERS_pfTimer0Overflow)(void) = NULL;
-
-static void (*TIMERS_pfTimer0CTC)(void) = NULL;
+/* There are 8 interrupts for timers */
+static void (*TIMERS_pvCallBackFunc[8])(void) = {NULL};
 
 
 /************************************************************************/
@@ -53,27 +52,27 @@ void TIMER0_voidInit() {
     SET_BIT(TCCR0 , TCCR0_WGM00);
     CLR_BIT(TCCR0 , TCCR0_WGM01);
 
-    /*  Compare Output Mode */
+/*  Compare Output Mode */
 #if TIMER0_PHASE_CORRECT_PWM_COMPARE_OUT_MODE ==  TIMER0_PHASE_CORRECT_PWM_COMPARE_OUT_NORMAL_MODE
-        CLR_BIT(TCCR0 , TCCR0_COM00);
-        CLR_BIT(TCCR0 , TCCR0_COM01);
+    CLR_BIT(TCCR0 , TCCR0_COM00);
+    CLR_BIT(TCCR0 , TCCR0_COM01);
 
 #elif TIMER0_PHASE_CORRECT_PWM_COMPARE_OUT_MODE ==  TIMER0_PHASE_CORRECT_PWM_COMPARE_OUT_INVERTING_MODE
-        CLR_BIT(TCCR0 , TCCR0_COM00);
-        SET_BIT(TCCR0 , TCCR0_COM01);
+    CLR_BIT(TCCR0 , TCCR0_COM00);
+    SET_BIT(TCCR0 , TCCR0_COM01);
 
 #elif TIMER0_PHASE_CORRECT_PWM_COMPARE_OUT_MODE ==  TIMER0_PHASE_CORRECT_PWM_COMPARE_OUT_NON_INVERTING_MODE
-        SET_BIT(TCCR0 , TCCR0_COM00);
-        SET_BIT(TCCR0 , TCCR0_COM01);
+    SET_BIT(TCCR0 , TCCR0_COM00);
+    SET_BIT(TCCR0 , TCCR0_COM01);
 #else
 #error " Wrong TIMER0_PHASE_CORRECT_PWM_MODE Compare Output Mode "
 #endif
 
-    /* Set compare match value */
-    OCR0 = TIMER0_COMPARE_MATCH_VALUE;
+/* Set compare match value */
+OCR0 = TIMER0_COMPARE_MATCH_VALUE;
 
-    /* Enable overflow Interrupt */
-    SET_BIT(TIMSK, TIMSK_TOIE0);
+/* Enable overflow Interrupt */
+SET_BIT(TIMSK, TIMSK_TOIE0);
 
 
 #elif TIMER0_MODE == TIMER0_FAST_PWM_MODE
@@ -163,17 +162,6 @@ u8 TIMER0_voidChangeOverFlowInterruptState(INTERRUPT_STATE enum_CopyState) {
     return OK;
 }
 
-u8 TIMER0_u8SetCallBack(void (*Copy_pf)(void)) {
-    if (Copy_pf == NULL) return NULL_POINTER;
-    TIMERS_pfTimer0Overflow = Copy_pf;
-    return OK;
-}
-
-u8 TIMER0_u8CTCSetCallBack(void (*Copy_pf)(void)) {
-    if (Copy_pf == NULL) return NULL_POINTER;
-    TIMERS_pfTimer0CTC = Copy_pf;
-    return OK;
-}
 
 /************************************************************************/
 /***********************	T I M E R 1		*****************************/
@@ -534,20 +522,20 @@ void TIMER2_voidInit() {
     CLR_BIT(TCCR2 , TCCR2_WGM21);
 
     /*  Compare Output Mode */
-    #if TIMER2_PHASE_CORRECT_PWM_COMPARE_OUT_MODE ==  TIMER0_PHASE_CORRECT_PWM_COMPARE_OUT_NORMAL_MODE
+#if TIMER2_PHASE_CORRECT_PWM_COMPARE_OUT_MODE ==  TIMER0_PHASE_CORRECT_PWM_COMPARE_OUT_NORMAL_MODE
             CLR_BIT(TCCR2 , TCCR2_COM20);
             CLR_BIT(TCCR2 , TCCR2_COM21);
 
-    #elif TIMER2_PHASE_CORRECT_PWM_COMPARE_OUT_MODE ==  TIMER0_PHASE_CORRECT_PWM_COMPARE_OUT_INVERTING_MODE
+#elif TIMER2_PHASE_CORRECT_PWM_COMPARE_OUT_MODE ==  TIMER0_PHASE_CORRECT_PWM_COMPARE_OUT_INVERTING_MODE
             CLR_BIT(TCCR2 , TCCR2_COM20);
             SET_BIT(TCCR2 , TCCR2_COM21);
 
-    #elif TIMER2_PHASE_CORRECT_PWM_COMPARE_OUT_MODE ==  TIMER0_PHASE_CORRECT_PWM_COMPARE_OUT_NON_INVERTING_MODE
+#elif TIMER2_PHASE_CORRECT_PWM_COMPARE_OUT_MODE ==  TIMER0_PHASE_CORRECT_PWM_COMPARE_OUT_NON_INVERTING_MODE
             SET_BIT(TCCR2 , TCCR2_COM20);
             SET_BIT(TCCR2 , TCCR2_COM21);
-    #else
-        #error " Wrong TIMER2_PHASE_CORRECT_PWM_MODE Compare Output Mode "
-    #endif
+#else
+#error " Wrong TIMER2_PHASE_CORRECT_PWM_MODE Compare Output Mode "
+#endif
 
     /* Set compare match value */
     OCR2 = TIMER2_COMPARE_MATCH_VALUE;
@@ -562,21 +550,21 @@ void TIMER2_voidInit() {
 
 
     /*  Compare Output Mode */
-    #if TIMER2_FAST_PWM_COMPARE_OUT_MODE == TIMER0_PHASE_CORRECT_PWM_COMPARE_OUT_NORMAL_MODE
+#if TIMER2_FAST_PWM_COMPARE_OUT_MODE == TIMER0_PHASE_CORRECT_PWM_COMPARE_OUT_NORMAL_MODE
         CLR_BIT(TCCR2 , TCCR2_COM20);
         CLR_BIT(TCCR2 , TCCR2_COM21);
 
-    #elif TIMER2_FAST_PWM_COMPARE_OUT_MODE == TIMER0_FAST_PWM_COMPARE_OUT_NON_INVERTING_MODE
+#elif TIMER2_FAST_PWM_COMPARE_OUT_MODE == TIMER0_FAST_PWM_COMPARE_OUT_NON_INVERTING_MODE
         CLR_BIT(TCCR2, TCCR2_COM20);
         SET_BIT(TCCR2, TCCR2_COM21);
 
-    #elif TIMER2_FAST_PWM_COMPARE_OUT_MODE == TIMER0_FAST_PWM_COMPARE_OUT_INVERTING_MODE
+#elif TIMER2_FAST_PWM_COMPARE_OUT_MODE == TIMER0_FAST_PWM_COMPARE_OUT_INVERTING_MODE
         SET_BIT(TCCR2 , TCCR2_COM20);
         SET_BIT(TCCR2 , TCCR2_COM21);
 
-    #else
-        #error " Wrong TIMER2_FAST_PWM_MODE Compare Output Mode "
-    #endif
+#else
+#error " Wrong TIMER2_FAST_PWM_MODE Compare Output Mode "
+#endif
 
     /* Set compare match value */
     OCR2 = TIMER2_COMPARE_MATCH_VALUE;
@@ -585,31 +573,31 @@ void TIMER2_voidInit() {
     SET_BIT(TIMSK, TIMSK_TOIE2);
 
 #else
-    #error " Wrong TIMER2_MODE config "
+#error " Wrong TIMER2_MODE config "
 #endif
 
 
 /* Select hardware action on OC2 pin when compare match in non PWM mode */
 #if TIMER0_MODE == TIMER0_NORMAL_MODE || TIMER0_MODE == TIMER0_CTC_MODE
 
-    #if TIMER0_NON_PWM_COMPARE_OUT_MODE == TIMER0_NON_PWM_COMPARE_OUT_NORMAL_MODE
-        CLR_BIT(TCCR2, TCCR2_COM20);
-        CLR_BIT(TCCR2, TCCR2_COM21);
+#if TIMER0_NON_PWM_COMPARE_OUT_MODE == TIMER0_NON_PWM_COMPARE_OUT_NORMAL_MODE
+    CLR_BIT(TCCR2, TCCR2_COM20);
+    CLR_BIT(TCCR2, TCCR2_COM21);
 
-    #elif TIMER0_NON_PWM_COMPARE_OUT_MODE == TIMER0_NON_PWM_COMPARE_OUT_TOGGLE_MODE
-        SET_BIT(TCCR2, TCCR2_COM20);
-        CLR_BIT(TCCR2, TCCR2_COM21);
+#elif TIMER0_NON_PWM_COMPARE_OUT_MODE == TIMER0_NON_PWM_COMPARE_OUT_TOGGLE_MODE
+    SET_BIT(TCCR2, TCCR2_COM20);
+    CLR_BIT(TCCR2, TCCR2_COM21);
 
-    #elif TIMER0_NON_PWM_COMPARE_OUT_MODE == TIMER0_NON_PWM_COMPARE_OUT_CLR_MODE
-        CLR_BIT(TCCR2, TCCR2_COM20);
-        SET_BIT(TCCR2, TCCR2_COM21);
+#elif TIMER0_NON_PWM_COMPARE_OUT_MODE == TIMER0_NON_PWM_COMPARE_OUT_CLR_MODE
+    CLR_BIT(TCCR2, TCCR2_COM20);
+    SET_BIT(TCCR2, TCCR2_COM21);
 
-    #elif TIMER0_NON_PWM_COMPARE_OUT_MODE == TIMER0_NON_PWM_COMPARE_OUT_SET_MODE
-        SET_BIT(TCCR2, TCCR2_COM20);
-        SET_BIT(TCCR2, TCCR2_COM21);
-    #else
-        #error " Wrong TIMER2_NON_PWM_MODE Compare Output Mode"
-    #endif
+#elif TIMER0_NON_PWM_COMPARE_OUT_MODE == TIMER0_NON_PWM_COMPARE_OUT_SET_MODE
+    SET_BIT(TCCR2, TCCR2_COM20);
+    SET_BIT(TCCR2, TCCR2_COM21);
+#else
+#error " Wrong TIMER2_NON_PWM_MODE Compare Output Mode"
+#endif
 
 #endif
 
@@ -617,7 +605,6 @@ void TIMER2_voidInit() {
     TCCR2 &= 0b11111000;
     TCCR2 |= TIMER0_CLOCK;
 }
-
 
 
 void TIMER2_voidSetCompareMatch(u8 Copy_u8OCR2Value) {
@@ -652,30 +639,59 @@ u8 TIMER2_voidChangeOverFlowInterruptState(INTERRUPT_STATE enum_CopyState) {
 /***********************	 I S R s		*****************************/
 /************************************************************************/
 
-void __vector_11() __attribute__((signal));
+u8 TIMERS_u8SetCallBack(void (*Copy_pf)(void), u8 Copy_Index) {
+    if (Copy_pf == NULL) return NULL_POINTER;
+    if (Copy_Index > TIMER2_COMP_INDEX) return NOT_OK;
 
-void __vector_11() {
-    static u16 Local_u16OverflowCounter = 0;
-    Local_u16OverflowCounter++;
-    if (Local_u16OverflowCounter == TIMER0_OVERFLOW_COUNT) {
-        TCNT0 = TIMER0_PRELOAD_VALUE;
-        Local_u16OverflowCounter = 0;
-        if (TIMERS_pfTimer0Overflow != NULL) {
-            TIMERS_pfTimer0Overflow();
-        }
-    }
+    TIMERS_pvCallBackFunc[Copy_Index] = Copy_pf;
+    return OK;
 }
 
-void __vector_10() __attribute__((signal));
 
+/* TIMER0_OVF */
+void __vector_11() __attribute__((signal));
+void __vector_11() {
+    if (TIMERS_pvCallBackFunc[TIMER0_OVF_INDEX] != NULL) TIMERS_pvCallBackFunc[TIMER0_OVF_INDEX]();
+}
+
+/* TIMER0_COMP */
+void __vector_10() __attribute__((signal));
 void __vector_10() {
-    static u16 Local_u16CTCCounter = 0;
-    Local_u16CTCCounter++;
-    if (Local_u16CTCCounter == TIMER0_OVERFLOW_COUNT) {
-        //        OCR0 = TIMER0_CTC_COUNT;
-        Local_u16CTCCounter = 0;
-        if (TIMERS_pfTimer0CTC != NULL) {
-            TIMERS_pfTimer0CTC();
-        }
-    }
+    if (TIMERS_pvCallBackFunc[TIMER0_COMP_INDEX] != NULL) TIMERS_pvCallBackFunc[TIMER0_COMP_INDEX]();
+}
+
+/* TIMER1_OVF */
+void __vector_9() __attribute__((signal));
+void __vector_9() {
+    if (TIMERS_pvCallBackFunc[TIMER1_OVF_INDEX] != NULL) TIMERS_pvCallBackFunc[TIMER1_OVF_INDEX]();
+}
+
+/* TIMER1_COMPB */
+void __vector_8() __attribute__((signal));
+void __vector_8() {
+    if (TIMERS_pvCallBackFunc[TIMER1_COMPB_INDEX] != NULL) TIMERS_pvCallBackFunc[TIMER1_COMPB_INDEX]();
+}
+
+/* TIMER1_COMPA */
+void __vector_7() __attribute__((signal));
+void __vector_7() {
+    if (TIMERS_pvCallBackFunc[TIMER1_COMPA_INDEX] != NULL) TIMERS_pvCallBackFunc[TIMER1_COMPA_INDEX]();
+}
+
+/* TIMER1_CAPT */
+void __vector_6() __attribute__((signal));
+void __vector_6() {
+    if (TIMERS_pvCallBackFunc[TIMER1_CAPT_INDEX] != NULL) TIMERS_pvCallBackFunc[TIMER1_CAPT_INDEX]();
+}
+
+/* TIMER2_OVF */
+void __vector_5() __attribute__((signal));
+void __vector_5() {
+    if (TIMERS_pvCallBackFunc[TIMER2_OVF_INDEX] != NULL) TIMERS_pvCallBackFunc[TIMER2_OVF_INDEX]();
+}
+
+/* TIMER2_COMP */
+void __vector_4() __attribute__((signal));
+void __vector_4() {
+    if (TIMERS_pvCallBackFunc[TIMER2_COMP_INDEX] != NULL) TIMERS_pvCallBackFunc[TIMER2_COMP_INDEX]();
 }
