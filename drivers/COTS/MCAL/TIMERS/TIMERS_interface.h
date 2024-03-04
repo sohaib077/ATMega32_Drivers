@@ -62,9 +62,9 @@ void TIMER0_voidSetPreload(u8 Copy_u8PreloadValue);
 
 u8 TIMER0_u8ReadTimer();
 
-u8 TIMER0_voidChangeOutCompareMatchInterruptState(INTERRUPT_STATE enum_CopyState);
+u8 TIMER0_u8ChangeOutCompareMatchInterruptState(INTERRUPT_STATE enum_CopyState);
 
-u8 TIMER0_voidChangeOverFlowInterruptState(INTERRUPT_STATE enum_CopyState);
+u8 TIMER0_u8ChangeOverFlowInterruptState(INTERRUPT_STATE enum_CopyState);
 
 /************************************************************************/
 /***********************	T I M E R 1		*****************************/
@@ -125,11 +125,11 @@ u8 TIMER1_u8SetICR1(u16 Copy_u16ICR1Value);
 
 u16 TIMER1_u16ReadTimer();
 
-u8 TIMER1_voidChangeOverFlowInterruptState(INTERRUPT_STATE enum_CopyState);
+u8 TIMER1_u8ChangeOverFlowInterruptState(INTERRUPT_STATE enum_CopyState);
 
-u8 TIMER1_voidChangeOutCompareMatchInterruptState(u8 Copy_u8Channel, INTERRUPT_STATE enum_CopyState);
+u8 TIMER1_u8ChangeOutCompareMatchInterruptState(u8 Copy_u8Channel, INTERRUPT_STATE enum_CopyState);
 
-u8 TIMER1_voidChangeICR1InterruptState(INTERRUPT_STATE enum_CopyState);
+u8 TIMER1_u8ChangeICR1InterruptState(INTERRUPT_STATE enum_CopyState);
 
 
 /************************************************************************/
@@ -176,9 +176,19 @@ void TIMER2_voidSetPreload(u8 Copy_u8PreloadValue);
 
 u8 TIMER2_u8ReadTimer();
 
-u8 TIMER2_voidChangeOutCompareMatchInterruptState(INTERRUPT_STATE enum_CopyState);
+u8 TIMER2_u8ChangeOutCompareMatchInterruptState(INTERRUPT_STATE enum_CopyState);
 
-u8 TIMER2_voidChangeOverFlowInterruptState(INTERRUPT_STATE enum_CopyState);
+u8 TIMER2_u8ChangeOverFlowInterruptState(INTERRUPT_STATE enum_CopyState);
+
+/************************************************************************/
+/*******************    INPUT CAPTURE UNIT	*****************************/
+/************************************************************************/
+
+
+void TIMER_voidICUInitEnable(void);
+u8   TIMER_voidICUSetTriggerEdge(u8 Copy_u8Edge);
+u8   TIMER_u8ChangeICUInterruptState(INTERRUPT_STATE enum_CopyState);
+u16  TIMER_u16ReadICR(void);
 
 
 /************************************************************************/

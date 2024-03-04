@@ -633,6 +633,46 @@ u8 TIMER2_voidChangeOverFlowInterruptState(INTERRUPT_STATE enum_CopyState) {
     return OK;
 }
 
+/************************************************************************/
+/*******************    INPUT CAPTURE UNIT	*****************************/
+/************************************************************************/
+
+
+void TIMER_voidICUInitEnable(void) {
+
+    /* Set trigger edge  */
+    #if (TIMER1_ICR_EDGE == TIMER1_ICR_RISING_EDGE)
+    SET_BIT(TCCR1B,TCCR1B_ICES1);
+    #elif(TIMER1_ICR_EDGE == TIMER1_ICR_FALLING_EDGE)
+    CLR_BIT(TCCR1B, TCCR1B_ICES1);
+    #endif
+
+    /* Enable Interrupt of ICU */
+    SET_BIT(TIMSK, TIMSK_TICIE1);
+}
+
+u8 TIMER_voidICUSetTriggerEdge(u8 Copy_u8Edge) {
+    if (Copy_u8Edge == TIMER1_ICR_RISING_EDGE)
+        SET_BIT(TCCR1B, TCCR1B_ICES1);
+    else if (Copy_u8Edge == TIMER1_ICR_FALLING_EDGE)
+        CLR_BIT(TCCR1B, TCCR1B_ICES1);
+    else return NOT_OK;
+    return OK;
+}
+
+u8 TIMER_u8ChangeICUInterruptState(INTERRUPT_STATE enum_CopyState) {
+    if (enum_CopyState == DISABLE)
+        CLR_BIT(TIMSK, TIMSK_TICIE1);
+    else if (enum_CopyState == ENABLE)
+        SET_BIT(TIMSK, TIMSK_TICIE1);
+    else return NOT_OK;
+    return OK;
+}
+
+u16 TIMER_u16ReadICR(void) {
+    return ICR1;
+}
+
 
 
 /************************************************************************/
@@ -650,48 +690,56 @@ u8 TIMERS_u8SetCallBack(void (*Copy_pf)(void), u8 Copy_Index) {
 
 /* TIMER0_OVF */
 void __vector_11() __attribute__((signal));
+
 void __vector_11() {
     if (TIMERS_pvCallBackFunc[TIMER0_OVF_INDEX] != NULL) TIMERS_pvCallBackFunc[TIMER0_OVF_INDEX]();
 }
 
 /* TIMER0_COMP */
 void __vector_10() __attribute__((signal));
+
 void __vector_10() {
     if (TIMERS_pvCallBackFunc[TIMER0_COMP_INDEX] != NULL) TIMERS_pvCallBackFunc[TIMER0_COMP_INDEX]();
 }
 
 /* TIMER1_OVF */
 void __vector_9() __attribute__((signal));
+
 void __vector_9() {
     if (TIMERS_pvCallBackFunc[TIMER1_OVF_INDEX] != NULL) TIMERS_pvCallBackFunc[TIMER1_OVF_INDEX]();
 }
 
 /* TIMER1_COMPB */
 void __vector_8() __attribute__((signal));
+
 void __vector_8() {
     if (TIMERS_pvCallBackFunc[TIMER1_COMPB_INDEX] != NULL) TIMERS_pvCallBackFunc[TIMER1_COMPB_INDEX]();
 }
 
 /* TIMER1_COMPA */
 void __vector_7() __attribute__((signal));
+
 void __vector_7() {
     if (TIMERS_pvCallBackFunc[TIMER1_COMPA_INDEX] != NULL) TIMERS_pvCallBackFunc[TIMER1_COMPA_INDEX]();
 }
 
 /* TIMER1_CAPT */
 void __vector_6() __attribute__((signal));
+
 void __vector_6() {
     if (TIMERS_pvCallBackFunc[TIMER1_CAPT_INDEX] != NULL) TIMERS_pvCallBackFunc[TIMER1_CAPT_INDEX]();
 }
 
 /* TIMER2_OVF */
 void __vector_5() __attribute__((signal));
+
 void __vector_5() {
     if (TIMERS_pvCallBackFunc[TIMER2_OVF_INDEX] != NULL) TIMERS_pvCallBackFunc[TIMER2_OVF_INDEX]();
 }
 
 /* TIMER2_COMP */
 void __vector_4() __attribute__((signal));
+
 void __vector_4() {
     if (TIMERS_pvCallBackFunc[TIMER2_COMP_INDEX] != NULL) TIMERS_pvCallBackFunc[TIMER2_COMP_INDEX]();
 }
